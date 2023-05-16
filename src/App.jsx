@@ -245,9 +245,10 @@ const bestFood=[{
           })
         }
        </div>
-       <div className='foodOrder'>
+       <div className='foodOrder-wrap'> <div className='foodOrder'>
            <Order data={food} heading="Inspiration for your first order"/>
-       </div>
+       </div></div>
+      
 
        <div className='hotelDetails '>
           <Order data={hotel} heading="Top brands for you" />

@@ -12,7 +12,7 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    items: 3,
     slidesToSlide: 2 // optional, default to 1.
   },
   mobile: {
@@ -51,10 +51,14 @@ const Order = ({ data,heading }) => {
             
             <div className="foodCard" key={index}>
              
-              <img className="foodImage" src={item.img} alt={item.item} />
+              <div  className="foodCard-section">
+                <img className="foodImage" src={item.img} alt={item.item} />
+              </div>
+              <div className="foodCard-bottom">
+               <p className="foodText hotelText">{item.item}</p>
               
-              <p className="foodText hotelText">{item.item}</p>
               {item.time && <p className="time">{item.time}</p>}
+              </div>
             </div>
           );
         })}
