@@ -1,0 +1,52 @@
+.navTop{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.separate{
+    cursor: pointer;
+   
+}
+
+.Image{
+    height: 29px;
+    width: 29px;
+    position: absolute;
+}
+.active .choiceText{
+    color: rgb(239, 79, 95);
+    font-size: 1.3rem;
+    letter-spacing: .4px;
+    /* color: rgb(105, 105, 105); */
+}
+.non-active .choiceText{
+    font-size: 1.3rem;
+    letter-spacing: .4px;
+    color: rgb(105, 105, 105);
+}
+
+.active  .imgDiv{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    height:4rem;
+    width: 4rem;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+    background: rgb(252, 238, 192);
+  } 
+  .non-active .imgDiv{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    height:4rem;
+    width: 4rem;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+    background: rgb(248, 248, 248);
+  }
+  

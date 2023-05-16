@@ -1,0 +1,89 @@
+
+.heading{
+    color: rgb(28, 28, 28);
+    
+    font-weight: 500; 
+    margin: 0px 0px 1rem;
+    color: rgb(28, 28, 28);
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: .8rem;
+}
+.foodImage{
+    height:10rem;
+    width: 10rem;
+    border-radius: 50%;
+    position: relative;
+}
+.react-multiple-carousel__arrow--right {
+    right: calc(4% + -38px);
+}
+.react-multiple-carousel__arrow {
+    position: absolute;
+    outline: 0;
+    transition: all .5s;
+    border-radius: 35px;
+    z-index:1000;
+    border: 0;
+    top:4.9rem;
+    background: white;
+    min-width: 38px;
+    min-height: 38px;
+    opacity: 1;
+    cursor: pointer;
+}
+.react-multiple-carousel__arrow:hover{
+    background-color: white;
+    color: #353232;
+
+}
+.react-multiple-carousel__arrow--left {
+    left: calc(4% + -61px);
+}
+.react-multiple-carousel__arrow::before {
+    font-size: 20px;
+    color: #353232;
+    display: block;
+    font-family: revicons;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+.foodText{
+    color: rgb(54, 54, 54);
+    font-size: 1.1rem;
+    /* line-height: 1.1rem; */
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    padding-right: 1.6rem;
+    width: 100%;
+    margin-top:1.5rem ;
+    
+}
+.time{
+    line-height:.1;
+    font-weight: 400;
+    color: rgb(28, 28, 28);
+    text-align: center;
+    justify-content: center;
+    padding-right: 1.6rem;
+    font-size: 1rem;
+    margin: 1rem 0px;
+}
+.foodCard{
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    
+   /* border: 1px solid red; */
+}
+
+.carouselItem{
+    width: 10px;
+    height: 300px;
+   
+}
+.carousel-container{
+    padding-top: 1rem;
+}

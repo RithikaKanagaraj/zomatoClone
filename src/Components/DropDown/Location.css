@@ -1,0 +1,38 @@
+.location-card{
+    width: 22rem;
+    max-height: 350px;
+    background: white;
+    border-radius: 0.4rem;
+    position: absolute;
+    left: 17rem;
+    overflow: auto;
+    border: 1px solid rgb(207, 207, 207);
+    box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+    top: 5rem;
+    z-index: 1;
+    
+}
+.location-card:hover{
+  background-color:rgb(243, 241, 241);
+}
+.location-content{
+    display: flex;
+    cursor: pointer;
+    font-size: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+}
+.current-location{
+    
+    margin: 0px;
+    color: rgb(239, 79, 95);
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-align: left;
+}
+.gps{
+    line-height: 2;
+    font-size: .9rem;
+    color: rgb(156, 156, 156);
+    text-align: left;
+}

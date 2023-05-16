@@ -1,0 +1,144 @@
+.container{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    margin: 2.4rem 0px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:1.8rem;
+  
+    
+}
+.cards{
+    /* border-color: rgb(255, 255, 255); */
+    /* border: 0.1rem solid rgb(232, 232, 232); */
+    padding: .4rem;
+    border-radius: 1rem;
+    width: 21rem;
+    position: static;
+    transition: box-shadow 0.3s ease-in-out; /* add transition effect */
+}
+
+
+.cards:hover {
+    
+    border-color: rgb(255, 255, 255);
+    background-color: 1rem solid rgb(255,255,255);
+    border: 0.1rem solid rgb(232, 232, 232);
+    box-shadow: 0px 0px 10px #999;
+  }
+.card-div{
+    position: relative;
+}
+
+
+
+.card-img{
+    width:320px;
+     height:260px;
+     border-radius: 1rem;
+     
+}
+.card-overlay {
+    position: absolute;
+    bottom: .1rem;
+    left: 4.6rem;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: rgb(37, 111, 239);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 0px 0.2rem 0.2rem 0px;
+    padding: 0px 0.6rem;
+    font-size: .9rem;
+    line-height: 1.8rem;
+}
+.item-time{
+    position: absolute;
+    bottom: 1rem;
+    right: .5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0.4rem;
+    font-weight: 500;
+    font-size: .9rem;
+    padding: 0.2rem 0.5rem 0.3rem;
+    line-height: 1.1rem;
+    color: rgb(54, 54, 54);
+}
+.card-detail{
+    display: flex;  
+    justify-content: space-between;
+}
+.hotel-name{
+    line-height: 1;
+    margin-block-end: 0px;
+    font-weight: 500;
+    text-align: left;
+    font-size: 1rem;
+    margin: 0.8rem 0px 0.6rem;
+    max-width: 80%;
+    color: rgb(28, 28, 28);
+}
+.rating-div{
+    margin: 0.8rem 0px 0.6rem;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgb(36, 150, 63);
+    color: rgb(255, 255, 255);
+    height: 1.5rem;
+    margin-right: 0px;
+    gap: 3px;
+    padding: 0px 0.4rem;
+    font-size: .8rem;
+    border-radius: 0.4rem;
+    border: 1px solid rgb(36, 150, 63);
+}
+
+.hotel-foods{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(105, 105, 105);
+    max-width: 56%;
+    padding: 0px 0px 0.4rem;
+}
+.food-price{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0px;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(105, 105, 105);
+    max-width: 30%;
+    padding: 0px 0px 0.4rem;
+}
+.bottom-line{
+    height: 0.1rem;
+    background-color: rgb(232, 232, 232);
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+.trend{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.hotel-trending{
+    /* margin: 0px 0px 0px 1rem; */
+    text-align: left;
+    color: rgb(130, 130, 130); 
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+.delivery{
+    height: 1.8rem;
+    width: 4rem;
+}

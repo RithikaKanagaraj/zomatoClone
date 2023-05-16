@@ -1,0 +1,142 @@
+.login-page{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    /* opacity: 0.95; */
+    justify-content: center;
+    align-items: center;
+    margin: 0; height: 100%; 
+    overflow: hidden;
+    z-index: 2;
+}
+.login-card{
+    height: 30rem;
+    width: 28.1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem 1.7rem 2.4rem;
+    border-radius: .5rem;
+}
+.login-header{
+    display: flex;
+    justify-content: space-between;
+}
+.login-name{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    /* margin: 1rem 0px; */
+    font-weight: 500;
+    color: rgb(53, 52, 52);
+}
+.login-body{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.input-box{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    height: 3rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    align-items: center;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 6px;
+    gap: .5rem;
+}
+.flex-left{
+    display: flex;
+    /* margin-right: 1rem; */
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+}
+.country-flag{
+    width: 1.5rem;
+}
+.country-code{
+    font-size: 1rem;
+    color: rgb(28, 28, 28);
+    min-width: 2.7rem;
+    text-align: right;
+
+}
+.separation-line{
+    width: 0px;
+    height: 2rem;
+    border-right: 1px solid rgb(207, 207, 207);
+    margin-left: .1rem;
+}
+.login-input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    color: rgb(28, 28, 28);
+    font-size: 1.2rem;
+}
+.otp-button{
+    min-width: 15rem;
+    min-height: 44px;
+    align-items: stretch;
+    border-radius: 0.4rem;
+    background: transparent;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    background: border-box rgb(239, 79, 95);
+    border-color: rgb(239, 79, 95)
+}
+.or-option{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.hr-line{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    padding: 0px;
+}
+.or{
+    position: absolute;
+    padding: 0.1rem 0.6rem 0.5rem 0.5rem;
+    background: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(105, 105, 105);
+}
+.vertical-line{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding: 0px;
+    margin: 0px;
+}
+.login-foot{
+    
+    font-size: 1rem;
+    color: rgb(51, 51, 51);
+    text-align: left;
+}
+.create-account{
+    color: rgb(239, 79, 95);
+    cursor: pointer;  
+    font-size: inherit;
+}

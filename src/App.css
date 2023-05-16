@@ -1,0 +1,43 @@
+
+.choices{
+    display: flex;
+    /* align-items:center; */
+    height: 7rem;
+    width: 100%;
+    border-bottom: 1px solid rgb(250, 244, 244);
+    /* justify-content: flex-start; */
+    padding-left:8rem;
+    gap: 4rem;
+}
+.filter{
+    /* border-bottom:1px solid red ; */
+    height: 5.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 7rem;
+    gap: .6rem;
+
+}
+.foodOrder{
+    /* border:1px solid red ; */
+    height: 20rem;
+    justify-content: flex-start;
+    padding-left: 7rem;
+    background: rgb(248, 248, 248);
+    padding-right: 4rem;
+   
+}
+.hotelDetails{
+ /* border:1px solid red ; */
+ height: 25rem;
+ justify-content: flex-start;
+ padding-left: 7rem;
+ padding-right: 4rem;
+ 
+}
+.heroSection{
+    /* border: 1px solid red; */
+    padding-left: 7rem;
+
+}

@@ -1,0 +1,29 @@
+.signup-inbox{
+   width: 100%;
+    height: 3rem;
+    padding: 1.3rem 1.2rem;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    color: rgb(181, 181, 181);
+    font-size: 17px;
+    outline: none;
+    /* outline: 1px solid rgb(0, 153, 153); */
+}
+.label{
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.2s ease 0s;
+    color: rgb(181, 181, 181);
+    top: 13px;
+    left: 14px;
+    font-size: 18px;
+    background: rgb(255, 255, 255);
+    padding: 0px;
+    max-width: 90%;
+    max-height: 2.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

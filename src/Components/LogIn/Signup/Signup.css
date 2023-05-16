@@ -1,0 +1,45 @@
+.sign-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    
+}
+.checkbox-div{
+    display: flex;
+}
+.check-box{
+    cursor: pointer;
+    outline: 0px;
+    border-radius: 4px;
+    margin-right: 7px;
+    width: 18px;
+    height: 18px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(156, 156, 156);
+    box-sizing: border-box;
+    position: relative;
+}
+.policy{
+    font-size:.8rem;
+    line-height:1rem;
+}
+.highLights{
+    font-weight: 500;
+    color: rgb(239, 79, 95);
+}
+.account-button{
+    min-width: 15rem;
+    min-height: 44px;
+    align-items: stretch;
+    border-radius: 0.4rem;
+    background: transparent;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+   
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    background: border-box rgb(156, 156, 156);
+    border-color: rgb(156, 156, 156);
+}
