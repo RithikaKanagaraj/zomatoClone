@@ -4,6 +4,7 @@ import Location from '../DropDown/Location';
 import Signup from '../LogIn/Signup/Signup'
 import Login from '../LogIn/Login';
 import {LoginState} from '../LogIn/GlobalState/LoginState'
+import { SignupState } from '../LogIn/GlobalState/SignupState';
 
 
 function Navbar() {
@@ -13,6 +14,8 @@ function Navbar() {
 
 
   const { open, handleChange  } = LoginState();
+  const {available,handleChanges} = SignupState();
+
   
 
   function handleClick(){
@@ -21,9 +24,7 @@ function Navbar() {
 
   
 
-  function handleSignup(){
-    setSignup(true)
-  }
+  
 
   return (
     <nav className='nav'>
@@ -51,9 +52,10 @@ function Navbar() {
           <div className='login'  onClick={handleChange}>Log in
           </div>
           {open && <Login open={open} handleChange={handleChange}/>}
-          <div className='signup' onClick={handleSignup}>Sign up
-          {signup && <Signup />}
+          <div className='signup' onClick={handleChanges}>Sign up
           </div>
+          {available && <Signup available={available} handleChanges={handleChanges}/>}
+
 
         </div>
     </nav>
