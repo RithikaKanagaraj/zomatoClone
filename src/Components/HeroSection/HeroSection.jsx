@@ -8,7 +8,7 @@ function HeroSection({ bestFood, heading }) {
       <div className="container">
           {bestFood.map((item, index) => {
             return (
-              <div className="cards">
+              <div className="cards" key={index}>
                 <div className="card-div">
                 <img className="card-img" src={item.img} />
                 <div className="card-overlay">{item.offer}</div>
