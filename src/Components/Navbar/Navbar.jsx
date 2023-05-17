@@ -1,22 +1,25 @@
 import {useState} from 'react'
 import './Navbar.css'
 import Location from '../DropDown/Location';
+import Signup from '../LogIn/Signup/Signup'
 import Login from '../LogIn/Login';
-import Signup from '../LogIn/Signup/Signup';
+import {LoginState} from '../LogIn/GlobalState/LoginState'
+
 
 function Navbar() {
 
   const[active,setActive]= useState(false);
-  const[login,setLogin]=useState(false);
   const[signup,setSignup]=useState(false);
+
+
+  const { open, handleChange  } = LoginState();
+  
 
   function handleClick(){
     setActive(!active);
   }
 
-  function handleLogin(){
-    setLogin(true)
-  }
+  
 
   function handleSignup(){
     setSignup(true)
@@ -45,9 +48,9 @@ function Navbar() {
         </div>
 
         <div className='account'>
-          <div className='login' onClick={handleLogin}>Log in
-          {login && <Login />}
+          <div className='login'  onClick={handleChange}>Log in
           </div>
+          {open && <Login open={open} handleChange={handleChange}/>}
           <div className='signup' onClick={handleSignup}>Sign up
           {signup && <Signup />}
           </div>
