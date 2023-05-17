@@ -6,9 +6,7 @@ function HeroSection({ bestFood, heading }) {
     <div>
       <h3 className="heading">{heading}</h3>
       <div className="container">
-      {/* <div className="container" style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)"}}> */}
           {bestFood.map((item, index) => {
-            console.log(item);
             return (
               <div className="cards">
                 <div className="card-div">

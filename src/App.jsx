@@ -8,12 +8,13 @@ import HeroSection from './Components/HeroSection/HeroSection'
 import Login from './Components/DropDown/Location'
 const Admin = React.lazy(() => import('./Components/HeroSection/HeroSection'));
 function App() {
+  
   const choice=[{
     img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1683874572/Zomato/download_dbmgu4.avif",
     opt:"Delivery"
   },{
     img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1683874595/Zomato/download_hatsje.avif",
-    opt:"Dining"
+    opt:"Dining Out"
   },{
     img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1683874627/Zomato/download_mj6fti.webp",
     opt:"Nightlife"
@@ -238,12 +239,15 @@ const bestFood=[{
        <div className="choices"> 
          <Choice choice={choice}/>
        </div>
+       <div className="filter-container">
+
        <div className='filter'>
         {
           filter.map((val,index) => {
             return <Filter svg={val.svg} type={val.type} key={index} />
           })
         }
+       </div>
        </div>
        <div className='foodOrder-wrap'> <div className='foodOrder'>
            <Order data={food} heading="Inspiration for your first order"/>
