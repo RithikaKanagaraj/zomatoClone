@@ -4,7 +4,6 @@ import Choice from '../../Components/ChoiceType/Choice'
 import Navbar from '../../Components/Navbar/Navbar'
 import Filter from '../../Components/Filter/Filter'
 import Order from '../../Components/Orders/Order'
-import HeroSection from '../../Components/HeroSection/HeroSection'
 const Admin = React.lazy(() => import('../../Components/HeroSection/HeroSection'));
 
 function LocationPage() {
