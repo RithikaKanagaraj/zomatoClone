@@ -1,0 +1,39 @@
+
+.inputWrapper{
+    width: 51%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 1%;
+    align-items: center;
+    height: 3.1rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.4rem;
+    box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+    border: 1px solid rgb(232, 232, 232);
+}
+.drop-down{
+    cursor: pointer;
+}
+.line{
+    border-left: 1.5px solid rgb(117, 117, 117);
+    height: 13px;
+    padding-left: 2%;
+    margin-left: 1%;
+}
+
+.inputBox{
+    border:none;
+    outline: none;
+    font-size: .9rem;
+    padding-left: 8px;
+}
+.inputBox-right{
+    border:none;
+    outline: none;
+    font-size: .9rem;
+    padding-left: 8px;
+    width:20rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
