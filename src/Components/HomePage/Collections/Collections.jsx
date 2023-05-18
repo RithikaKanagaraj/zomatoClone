@@ -31,7 +31,7 @@ function Collections() {
 
 
   return (
-    <div>
+    <div className='collection-section'>
         <h2 className='collection-head'>Collections</h2>
         <div className='collection-subtitle'>
             <h6 className='subtitle'>Explore curated lists of top restaurants, cafes, pubs, and bars in Coimbatore, based on trends</h6>

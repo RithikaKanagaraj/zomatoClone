@@ -1,5 +1,7 @@
-.collection-head{
-    font-size: 2.5rem;
+.collection-section{
+    margin-bottom: 8rem;
+}.collection-head{
+    font-size: 2.2rem;
     line-height: 1.2;
     font-weight: 400;
     color: rgb(28, 28, 28);
@@ -32,7 +34,6 @@
     grid-template-columns: repeat(4,1fr);
     gap: .5rem;
     margin-top: 2rem;
-
 }
 .grid-card{
     height: 20rem;
