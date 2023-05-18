@@ -59,6 +59,9 @@
     letter-spacing: .6px;
     padding: 0.8rem !important;
     gap: 2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     
 }
 .login{

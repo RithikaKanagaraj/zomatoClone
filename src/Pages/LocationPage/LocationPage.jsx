@@ -259,6 +259,7 @@ function LocationPage() {
             <div className='heroSection'>
               
               <Admin bestFood={bestFood} heading="Best Food in Coimbatore"/>
+
             </div>
     
             {/* <Login /> */}
