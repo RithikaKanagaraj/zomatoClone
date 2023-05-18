@@ -49,3 +49,21 @@
     margin: 0px;
     color: rgb(54, 54, 54);
 }
+.see-more-btn{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(232, 232, 232);
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-shadow: rgb(28 28 28 / 8%) 0px 1.42623px 2.85246px;
+    gap: .5rem;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
