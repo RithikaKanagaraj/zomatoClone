@@ -59,6 +59,9 @@
     transform: translateY(-50%);
     padding-bottom: 1rem;
 }
+.get-app{
+    font-size: .85rem;
+}
 .right-menu{
     display: flex;
     justify-content: space-evenly;

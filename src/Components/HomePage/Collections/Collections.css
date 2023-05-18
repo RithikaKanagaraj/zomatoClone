@@ -1,0 +1,98 @@
+.collection-head{
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: rgb(28, 28, 28);
+    margin: 0px;
+}
+.collection-subtitle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.4rem;
+}
+.subtitle{
+    line-height: 1.5;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgb(85, 84, 84);
+}
+.subtile-left{
+    display: inline-flex;
+    font-size: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0.1rem solid transparent;
+    border-radius: 0.4rem;
+    line-height: 1;
+    gap: .5rem;
+    color:#FF7E8B
+}
+.content-Container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: .5rem;
+    margin-top: 2rem;
+
+}
+.grid-card{
+    height: 20rem;
+    position: relative;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0px 7.5px 10px 0px;
+    
+}
+.grid-image-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 0.6rem;
+    width: 100%;
+    height: 100%;
+}
+.bg{
+    height: 20rem;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.9;
+    border-radius: 0.5rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%);
+}
+.grid-image{
+    height: 20rem;
+    object-fit: cover;
+    width:100%;
+    border-radius: 0.5rem;
+    position: absolute;
+}
+.image-bottom{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 0px 1.1rem;
+
+}
+.place-svg{
+    display: flex;
+    align-items: center;
+    margin: 0.3rem 0px .6qrem;
+}
+.image-name{
+    line-height: 1.5;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.image-place{
+    line-height: 1.2;
+    font-weight: 400;
+    margin: 0px 0.5rem 0px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}

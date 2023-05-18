@@ -3,6 +3,7 @@
     position: relative;
     display: flex;
     gap: 1.5rem;
+    margin-bottom: 4.2rem;
 }
 .specific-card{
     height: 15rem;
@@ -37,8 +38,9 @@
 .service-title{
     text-align: left;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 3rem; 
+    color: rgb(43, 42, 42);
 }
 .service-subtitle{
     color: rgb(79, 79, 79);

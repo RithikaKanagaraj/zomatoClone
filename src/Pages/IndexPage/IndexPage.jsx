@@ -1,4 +1,5 @@
 import React from 'react'
+import Collections from '../../Components/HomePage/Collections/Collections'
 import Header from '../../Components/HomePage/Header/Header'
 import Service from '../../Components/HomePage/ServiceType/Service'
 import './IndexPage.css'
@@ -18,7 +19,6 @@ function IndexPage() {
 
 
 
-
   return (
     <div>
         <div className='header'>
@@ -26,6 +26,7 @@ function IndexPage() {
         </div>
         <div className='body-content'>
             <Service ServiceType={ServiceType}/>
+            <Collections />
         </div>
     </div>
   )
