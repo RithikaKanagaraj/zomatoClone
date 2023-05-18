@@ -1,0 +1,38 @@
+.buttons{
+    display: flex;
+    gap: 1.8rem;
+}
+.foot-btn{
+    min-width: 6rem;
+    width: max-content;
+    max-width: 100%;
+    cursor: pointer;
+    position: relative;
+    padding: 0.7rem 0.7rem;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 0.4rem;
+    display: flex;
+   
+}
+.foot-content{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    gap: .5rem;
+}
+.foot-logo{
+    height: .9rem;
+    width: 1.3rem;
+    border-radius: 0;
+}
+.button-name{
+    font-size: 1rem;
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(28, 28, 28);
+    font-weight: 400;
+}

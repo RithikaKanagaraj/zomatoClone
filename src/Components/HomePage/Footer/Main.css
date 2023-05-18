@@ -1,0 +1,7 @@
+.footer-content{
+    margin-top: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border: 1px solid red;
+    gap: 2rem;
+}

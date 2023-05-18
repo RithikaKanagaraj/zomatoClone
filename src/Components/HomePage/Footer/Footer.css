@@ -1,0 +1,10 @@
+.foot{  
+    position: relative;
+    max-width: 110rem;
+    max-height: initial;
+    margin: 3rem 5rem;
+}
+.foot-head{
+    display: flex;
+    justify-content: space-between;
+}

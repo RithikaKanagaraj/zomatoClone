@@ -1,5 +1,6 @@
 import React from 'react'
 import Collections from '../../Components/HomePage/Collections/Collections'
+import Footer from '../../Components/HomePage/Footer/Footer'
 import Header from '../../Components/HomePage/Header/Header'
 import Popular from '../../Components/HomePage/Populars/Popular'
 import Service from '../../Components/HomePage/ServiceType/Service'
@@ -55,6 +56,37 @@ function IndexPage() {
   },{
     name:"Vadavalli",
     total:"147 Places"
+  },
+  {
+    name:"Nehru Stadium",
+    total:"34 Places"
+  },{
+    name:"Singanallur",
+    total:"122 Places"
+  },{
+    name:"Chinniayam Palayam",
+    total:"15 Places"
+  },{
+    name:"Neelambur",
+    total:"52 Places"
+  },{
+    name:"Kavundampalayam",
+    total:"70 Places"
+  },{
+    name:"Sitra",
+    total:"79 Places"
+  },{
+    name:"Ukkadam",
+    total:"122 Places"
+  },{
+    name:"Ondipudur",
+    total:"77 Places"
+  },{
+    name:"Podanur",
+    total:"181 Places"
+  },{
+    name:"Sivanadha Colony",
+    total:"43 Places"
   }
 ]
 
@@ -68,6 +100,11 @@ function IndexPage() {
             <Service ServiceType={ServiceType}/>
             <Collections />
             <Popular popular={popular}/>
+           
+        </div>
+        <div className='homePage-footer'>
+
+        <Footer />
         </div>
     </div>
   )
