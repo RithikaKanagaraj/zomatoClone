@@ -95,7 +95,6 @@
 
 .hotel-foods{
     font-size: 1rem;
-    line-height: 1.5;
     margin: 0px;
     text-align: left;
     overflow: hidden;
@@ -136,6 +135,6 @@
     line-height: 1.2rem;
 }
 .delivery{
-    height: 1.8rem;
-    width: 4rem;
+    height: 1.5rem;
+    width: 3rem;
 }

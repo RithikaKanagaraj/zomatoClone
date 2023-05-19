@@ -1,5 +1,6 @@
 import {useRef} from 'react'
 import './Login.css'
+import LoginButton from './LoginButton';
 import LoginOption from './LoginOption'
 
 
@@ -49,7 +50,8 @@ const modeofLogin=[{
                       <input className='login-input' placeholder='Phone'/>
                     </div>
                 </div>
-                <button className='otp-button'>Send One Time Password</button>
+                <LoginButton data="Send One Time Password"/>
+                {/* <button className='otp-button'>Send One Time Password</button> */}
                 <div className='or-option'>
                   <hr className='hr-line'></hr>
                   <p className='or'>or</p>

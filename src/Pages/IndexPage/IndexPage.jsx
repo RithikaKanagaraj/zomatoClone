@@ -1,4 +1,5 @@
 import React from 'react'
+import GetApp from '../../Components/HomePage/AppComponent/GetApp'
 import Collections from '../../Components/HomePage/Collections/Collections'
 import Footer from '../../Components/HomePage/Footer/Footer'
 import Header from '../../Components/HomePage/Header/Header'
@@ -102,10 +103,11 @@ function IndexPage() {
             <Popular popular={popular}/>
            
         </div>
-        <div className='homePage-footer'>
+        <GetApp />
+        {/* <div className='homePage-footer'>
 
         <Footer />
-        </div>
+        </div> */}
     </div>
   )
 }

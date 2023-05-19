@@ -1,0 +1,8 @@
+.app-images{
+    display: flex;
+    gap: 2rem;
+}
+.images-download{
+    width: 9.5rem;
+    height: 2.5rem;
+}

@@ -1,0 +1,78 @@
+.Zomato-app{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(255, 251, 247);
+}
+.app-div{
+    position: relative;
+    max-width: 90rem;
+    max-height: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.mob-div{
+    width: 20rem;
+    top: 0px;
+    left: 0px;
+    height: 20rem;
+    border-radius: inherit;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+.image-mobile{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: none;
+    opacity: 1;
+    border-radius: inherit;
+    filter: unset;
+
+}
+.form-page{
+    position: relative;
+    width: 27rem;
+    height: 20rem;
+    flex-shrink: 0;
+}
+.app-head{
+    color: rgb(28, 28, 28);
+    margin: 0px 0px 1rem;
+    font-weight: 500;
+    font-size: 3rem;
+}
+.app-subtitle{
+    font-size: inherit;
+    margin: 0px 0px 1.5rem;
+    color: rgb(90, 90, 90);
+    width: 100%;
+    line-height: 1.7rem;
+}
+.radio-div{
+    width: 50%;
+    height: 2.5rem;
+}
+.radio-section{
+    display: flex;
+    justify-content: space-between;
+}
+.text-box{
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+}
+.button-link{
+    width: 50%;
+}
+.Download{
+    line-height: 1.5;
+    margin: 0px 0px 1rem;
+    color: rgb(156, 156, 156);
+    font-size: 1rem;
+}
