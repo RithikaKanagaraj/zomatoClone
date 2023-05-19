@@ -1,6 +1,7 @@
 import React from 'react'
 import './Explore.css'
 import Accordion from 'react-bootstrap/Accordion';
+import ExploreCities from './ExploreCities';
 
 function Explore() {
     const explores=[{
@@ -51,6 +52,24 @@ function Explore() {
         ]
     }
 ]
+
+    const location=[{
+        name:"Cities We Deliver To",
+        list:["Delhi" ,"NCR","Kolkata","Mumbai","Bengaluru","Pune","Hyderabad","Chennai",
+    "Lucknow","Kochi","Jaipur","Ahmedabad","Chandigarh","Goa","Indore","Gangtok","Nashik","Ooty",
+    "Shimla","Ludhiana","Guwahati","Amritsar","Kanpur","Allahabad","Aurangabad","Bhopal","Ranchi",
+    "Visakhapatnam","Bhubaneswar","Coimbatore","Mangalore","Vadodara","Nagpur","Agra","Dehradun",
+    "Mysore","Puducherry","Surat","Varanasi","Patna","Udaipur","Srinagar","Khajuraho","Neemrana",
+    "Cuttack","Trivandrum","Haridwar","Leh","Pushkar","Rajkot","Madurai","Kozhikode","Alappuzha",
+    "Thrissur", "Manipal", "Vijayawada", "Jodhpur", "Kota" ,"Ajmer" ,"Mussoorie", "Rishikesh",
+    "Jalandhar", "Jammu" ,"Manali" ,"Dharamshala", "Raipur", "Gorakhpur", "Palakkad", "Shirdi", 
+    "Ujjain", "Jaisalmer", "Kodaikanal" ,"Puri" ,"Jamnagar", "Junagadh", "Tirupati", "Darjeeling",
+    "Bilaspur" ,"Itanagar" ,"Siliguri", "Nainital", "Meerut","Vellore","Salem","Trichy","Patiala",
+    "Kolhapur", "Amravati", "Jabalpur" ,"Gwalior", "Jamshedpur", "Guntur" ,"Agartala", "Aizawl", 
+    "Anand" ,"Bareilly", "Bathinda", "Durg", "Bhilai","Bikaner","Diu","Erode","Imphal","Jhansi",
+    "Karnal","Kharagpur","Kohima", "Mount Abu" , "Panipat", "Rourkela" ,"Saharanpur", "Shillong",
+     "Silvassa", "Tanjore", "Tiruppur", "Warangal", "Dharwad", "Hubli", "Muktsar", "Ahmednagar", 
+     "AligarhAlwar","Anantapur","Belgaum","Bellary","Bhavnagar","Bokaro","Davanagere"]}]
   return (
     <div className='explore'>
         <div className='explore-content'>
@@ -79,8 +98,7 @@ function Explore() {
                     )
                 })
             }
-            
-
+        <ExploreCities location={location} />
         </div>
     </div>
   )

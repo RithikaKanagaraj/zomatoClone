@@ -2,11 +2,11 @@ import {useState} from 'react'
 import './Popular.css'
 
 function Popular({popular}) {
-    const [visibleCards, setVisibleCards] = useState(8); // Initial number of visible cards
+    const [visibleCards, setVisibleCards] = useState(8); 
 
   const handleSeeMore = () => {
-    setVisibleCards(visibleCards + (popular.length -8)); // Increase the number of visible cards by 4
-  };
+    setVisibleCards(visibleCards + (popular.length -8));
+ };
   return (
     <div className='Populars'>
         <h3 className='populat-title'>Popular localities in and around <span className='city-name'>Coimbatore</span></h3>
