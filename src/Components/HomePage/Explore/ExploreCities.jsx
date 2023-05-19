@@ -12,19 +12,18 @@ function ExploreCities({location}) {
         setVisibleCards(visibleCards + (length -59));
      };
 
-
   return (
     <div >
-            {
-                location.map((item,index)=>{
-                    return(
+       {
+            location.map((item,index)=>{
+                return(
 
-                        <div className="cards-grid" key={index} > 
-                            <Accordion style={{ marginBottom:"1.2rem"}}>
-                                <Accordion.Item >
-                                    <Accordion.Header className='accordion-header'>{item.name}</Accordion.Header>
-                                    <Accordion.Body className='accordion-content'>
-                                    <ul className="bullet-list-place">
+                    <div className="cards-grid" key={index} > 
+                        <Accordion style={{ marginBottom:"1.2rem"}}>
+                          <Accordion.Item >
+                             <Accordion.Header className='accordion-header'>{item.name}</Accordion.Header>
+                             <Accordion.Body className='accordion-content'>
+                                <ul className="bullet-list-place">
                                         {item.list.slice(0, visibleCards).map((listItem, listIndex) => (
                                         <li key={listIndex} >{listItem}</li>
                                         ))}
@@ -33,10 +32,10 @@ function ExploreCities({location}) {
                                         
                                     )}
                                     </ul>
-                                    </Accordion.Body>
-                                </Accordion.Item>
-                                </Accordion>
-                        </div>
+                             </Accordion.Body>
+                            </Accordion.Item>
+                        </Accordion>
+                     </div>
                     )
                 })
             }

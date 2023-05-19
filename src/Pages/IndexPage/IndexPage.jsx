@@ -105,11 +105,11 @@ function IndexPage() {
            
         </div>
         <GetApp />
+
         <Explore />
-        {/* <div className='homePage-footer'>
+        
 
         <Footer />
-        </div> */}
     </div>
   )
 }

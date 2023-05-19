@@ -1,10 +1,21 @@
 .foot{  
-    position: relative;
-    max-width: 110rem;
-    max-height: initial;
-    margin: 3rem 5rem;
+    width: 100%;
+    background: rgb(248, 248, 248);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
 }
+.content-footer{
+    max-width: 110rem;
+    width: 90%;
+    padding: 1rem 0px 2.2rem;
+    position: relative;
+    border: 1px solid red;
+}
+
 .foot-head{
     display: flex;
+    align-items: center;
+    width: 100%;
     justify-content: space-between;
 }

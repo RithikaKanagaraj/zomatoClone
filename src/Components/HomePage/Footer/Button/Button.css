@@ -2,19 +2,23 @@
     display: flex;
     gap: 1.8rem;
 }
-.foot-btn{
-    min-width: 6rem;
-    width: max-content;
-    max-width: 100%;
+
+.button-div{
     cursor: pointer;
-    position: relative;
-    padding: 0.7rem 0.7rem;
+    align-items: center;
+    padding: 0.5rem;
     border: 1px solid rgb(181, 181, 181);
     border-radius: 0.4rem;
     display: flex;
-   
+    justify-content: center;
+    gap: .5rem;
 }
-.foot-content{
+.foot-btn-image{
+    height: 1.2rem;
+    width: 1.8rem;
+    border-radius:0;
+}
+.foot-content-btn{
     display: flex;
     align-items: center;
     max-width: 100%;
@@ -22,12 +26,12 @@
     text-overflow: ellipsis;
     gap: .5rem;
 }
-.foot-logo{
+.foot-logo-btn{
     height: .9rem;
     width: 1.3rem;
     border-radius: 0;
 }
-.button-name{
+.foot-btn-text{
     font-size: 1rem;
     max-width: 80%;
     white-space: nowrap;

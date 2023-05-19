@@ -4,9 +4,8 @@
     max-height: initial;
     margin: 3rem 5rem;
 }
-.homePage-footer{
+.explores-div{
+    background: rgb(252, 252, 252);
     width: 100%;
-    background: rgb(248, 248, 248);
-    height: 20rem;
-    position: absolute;
+    height: 30rem;
 }

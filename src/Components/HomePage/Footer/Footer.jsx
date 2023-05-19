@@ -7,11 +7,14 @@ function Footer() {
   return (
     
         <div className='foot'>
+          <div className='content-footer'>
+
             <div className='foot-head'>
                  <img className='logo' src='https://res.cloudinary.com/dhtamjbrq/image/upload/v1683874523/Zomato/download_xful86.avif'/>
                  <Button />
             </div>
                  <Main />
+          </div>
 
         </div>
   )
