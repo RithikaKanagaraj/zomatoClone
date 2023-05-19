@@ -38,9 +38,7 @@ function GetApp() {
                     </div>
                     </div>
                     <p className='Download'>Download app from</p>
-                    
                         <Download />
-                    
                 </form>
             </div>
         </div>

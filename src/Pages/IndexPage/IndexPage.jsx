@@ -1,6 +1,7 @@
 import React from 'react'
 import GetApp from '../../Components/HomePage/AppComponent/GetApp'
 import Collections from '../../Components/HomePage/Collections/Collections'
+import Explore from '../../Components/HomePage/Explore/Explore'
 import Footer from '../../Components/HomePage/Footer/Footer'
 import Header from '../../Components/HomePage/Header/Header'
 import Popular from '../../Components/HomePage/Populars/Popular'
@@ -104,6 +105,7 @@ function IndexPage() {
            
         </div>
         <GetApp />
+        <Explore />
         {/* <div className='homePage-footer'>
 
         <Footer />

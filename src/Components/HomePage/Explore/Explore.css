@@ -1,0 +1,21 @@
+.explore{
+    background: rgb(252, 252, 252);
+    width: 100%;
+    height: 30rem;
+    border: 1px solid red;
+}
+.explore-content{
+    margin: 3rem 5rem;
+    padding-bottom: 5rem;
+}
+.explore-heading{
+    margin: 0px 0px 2rem;
+    color: rgb(54, 54, 54);
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 400;
+}
+.accordion-header {
+    background-color: white;
+    color: #000;
+  }
