@@ -56,7 +56,7 @@ const Order = ({ data,heading }) => {
                 <img className="foodImage" src={item.img} alt={item.item} />
               {/* </div> */}
               {/* <div className="foodCard-bottom"> */}
-               <p style={{fontSize:'1.2rem'}}className="foodText hotelText">{item.item}</p>
+               <div style={{fontSize:'1.2rem'}}className="foodText hotelText">{item.item}</div>
               
               {item.time && <p className="time">{item.time}</p>}
               {/* </div> */}

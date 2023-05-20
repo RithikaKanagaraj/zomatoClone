@@ -2,15 +2,13 @@
     width: 100%;
     background: rgb(248, 248, 248);
     display: flex;
-    -webkit-box-pack: center;
     justify-content: center;
 }
 .content-footer{
     max-width: 110rem;
     width: 90%;
-    padding: 1rem 0px 2.2rem;
+    padding: 3rem 0px 2.2rem;
     position: relative;
-    border: 1px solid red;
 }
 
 .foot-head{

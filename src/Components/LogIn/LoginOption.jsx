@@ -8,7 +8,7 @@ function LoginOption({data}) {
             return(
                 <div className='border-div'>
                     {item.svg}
-                    <p>{item.type}</p>
+                    <div>{item.type}</div>
                     </div>
             )
         })}

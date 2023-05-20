@@ -30,7 +30,7 @@ function Signup({handleChanges}) {
     
   return (
     <div className='login-page'>
-        <div className='login-card'>
+        <div className='signup-card'>
         <section className='login-header'>
             <p className='login-name'>Sign up</p>
             
@@ -46,7 +46,7 @@ function Signup({handleChanges}) {
           <button className='account-button'>Create account</button>
           <div className='or-option'>
                 <hr className='hr-line'></hr>
-                <p className='or'>or</p>
+                <div className='or'>or</div>
           </div>
           <div ><LoginOption data={google}/></div>
           <p className='login-foot'>Already have an account? <span className='create-account'>Log in</span></p>

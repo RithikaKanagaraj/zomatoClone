@@ -1,7 +1,24 @@
 .footer-content{
-    margin-top: 1.8rem;
+    margin-top: 1.9rem;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    border: 1px solid red;
-    gap: 2rem;
+    gap: 1.5rem;
+}
+.grid-row{
+    display: grid;
+    grid-template-rows: auto;
+}
+.foot-main-head{
+    font-size: .9rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    margin: 0px 0px 1.2rem;
+}
+.list-foot{
+    list-style-type: none;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: rgb(105, 105, 105);
+    margin: 0.5rem 0px;
+    
 }
