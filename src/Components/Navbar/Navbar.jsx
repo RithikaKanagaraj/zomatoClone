@@ -18,12 +18,6 @@ function Navbar() {
 
   
 
-  // function handleClick(){
-  //   setActive((active)=> !active);
-  // }
-
-  
-
   
 
   return (
@@ -31,11 +25,9 @@ function Navbar() {
         <img className='logo' src='https://res.cloudinary.com/dhtamjbrq/image/upload/v1683874523/Zomato/download_xful86.avif'/>
         <SearchBar />
         <div className='account'>
-          <div className='login'  onClick={handleChange}>Log in
-          </div>
+          <div className='login'  onClick={handleChange}>Log in</div>
           {open && <Login open={open} handleChange={handleChange}/>}
-          <div className='signup' onClick={handleChanges}>Sign up
-          </div>
+          <div className='signup' onClick={handleChanges}>Sign up</div>
           {available && <Signup available={available} handleChanges={handleChanges}/>}
 
 

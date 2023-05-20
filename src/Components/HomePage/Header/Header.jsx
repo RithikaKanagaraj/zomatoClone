@@ -1,8 +1,20 @@
 import React from 'react'
 import './Header.css'
+import Login from '../../LogIn/Login';
+import Signup from '../../LogIn/Signup/Signup'
+import {LoginState} from '../../LogIn/GlobalState/LoginState'
+import {SignupState} from '../../LogIn/GlobalState/SignupState'
+
+
 import SearchBar from '../../SearchBar/SearchBar'
 
 function Header() {
+
+
+
+  const { open, handleChange  } = LoginState();
+  const {available,handleChanges} = SignupState();
+
   return (
     <div>
         <div className='head'>
@@ -19,8 +31,15 @@ function Header() {
                     <div className='right-menu'>
                     <p className='right-link'>Investor Relations</p>
                     <p className='right-link'>Add restaurant</p>
-                    <p className='right-link'>Log in</p>
-                    <p className='right-link'>Sign up</p>
+                    
+
+                    <p className='right-link' onClick={handleChange}>Log in</p>
+                    
+                     {open && <Login open={open} handleChange={handleChange}/>}
+
+                    <p className='right-link' onClick={handleChanges}>Sign up</p>
+                      {available && <Signup available={available} handleChanges={handleChanges}/>}
+
                     </div>
                 </nav>
             </div>
