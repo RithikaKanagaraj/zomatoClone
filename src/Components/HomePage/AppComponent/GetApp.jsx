@@ -9,8 +9,10 @@ import {basicSchema} from '../../LogIn/Form-Schema/SchemaForm'
 
 function GetApp() {
 
-    const onSubmit=()=>{
-        console.log(12345)
+    const onSubmit=async(values,actions)=>{
+        console.log(values)
+        await new Promise((resolve)=> setTimeout(resolve,1000))
+        actions.resetForm();
       }
 
     const data=[{
@@ -44,26 +46,27 @@ function GetApp() {
                         <RadioButton />
                         </section>
                     </div>
-                        <div className='text-input-box'>
-                        {
-                            data.map((item,index)=>{
-                                return <Input name={item.name} 
+                    <div className='text-input-box'>
+                        {data.map((item, index) => (
+                            <div key={index}>
+                            <Input
+                                name={item.name}
                                 type={item.type}
-                                value={values.initialValues}
-                                onBlur={handleBlur} 
+                                value={values}
+                                onBlur={handleBlur}
                                 onChange={handleChange}
-                                className={errors.Email ? "input-error" : ''}/>
-        
-                            })
-                        }
-
-                    
-
-
-                    <div className='button-link'>
-                    <LoginButton data="Share App Link" />
+                                className={errors.Email && touched.Email ? "input-error" : ''}
+                            />
+                            {errors.Email && (
+                                <p className='error-message'>{ errors.Email}</p>
+                            )}
+                            </div>
+                        ))}
+                        <div className='button-link'>
+                            <LoginButton data="Share App Link" />
+                        </div>
                     </div>
-                    </div>
+
                 </form>
                     <p className='Download'>Download app from</p>
                         <Download />

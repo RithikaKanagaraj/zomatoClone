@@ -9,8 +9,10 @@ import {basicSchema} from '../../LogIn/Form-Schema/SchemaForm'
 function Signup({handleChanges}) {
 
 
-  const onSubmit=()=>{
-    console.log(12345)
+  const onSubmit=async(values,actions)=>{
+    console.log(values)
+    await new Promise((resolve)=> setTimeout(resolve,1000))
+    actions.resetForm();
   }
 
   const google=[{
@@ -29,7 +31,7 @@ function Signup({handleChanges}) {
     }]
 
 
-    const {values,touched,handleBlur,handleChange,errors,handleSubmit}=useFormik({
+    const {values,touched,handleBlur,isSubmitting,handleChange,errors,handleSubmit}=useFormik({
       initialValues:{
           Email:"",
           FullName:""
@@ -52,31 +54,36 @@ function Signup({handleChanges}) {
         </section>
         <section className='sign-body'>
           <form onSubmit={handleSubmit} autoComplete='off'>
-            <div className='text-box'>
+          <div className='text-box'>
+            {details.map((item, index) => (
+              <div key={index} >
+                <Input
+                  name={item.name}
+                  type={item.type}
+                  value={values}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                  className={errors[item.name] && touched[item.name] ? "input-error" : ""}
+                />
+            
+                  <p className='error-message'>{errors[item.name] && touched[item.name] && errors[item.name]}</p>
+              </div>
+            ))}
+          </div>
 
-          {
-            details.map((item,index)=>{
-              return <Input name={item.name} type={item.type} value={values} 
-                onBlur={handleBlur}
-                onChange={handleChange}
-                 className={errors[item.name] && touched[item.name] ? "input-error" : ''}/>
- 
-            })
-          }        
-            </div>
       
           <div className='checkbox-div'>
             <input type="checkbox" className="check-box" />
             <p className='policy'>I agree to Zomato's <span className='highLights'>Terms of Service</span>,<span className='highLights'>Privacy Policy</span> and <span className='highLights'>Content Policies</span></p>
           </div>
-          <button className='account-button'>Create account</button>
+          <button disabled={isSubmitting} className='account-button'>Create account</button>
         </form>
           <div className='or-option-sign'>
                 <hr className='hr-line'></hr>
                 <div className='or'>or</div>
           </div>
           <div className='google-btn-div'>
-            <LoginOption data={google}/></div>
+            <LoginOption  data={google}/></div>
           <p className='sign-foot'>Already have an account? <span className='create-account'>Log in</span></p>
         </section>
         </div>
