@@ -1,4 +1,3 @@
-
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -52,14 +51,12 @@ const Order = ({ data,heading }) => {
             
             <div className="foodCard" key={index}>
              
-              {/* <div  className="foodCard-section"> */}
                 <img className="foodImage" src={item.img} alt={item.item} />
-              {/* </div> */}
-              {/* <div className="foodCard-bottom"> */}
+              
                <div style={{fontSize:'1.2rem'}}className="foodText hotelText">{item.item}</div>
               
               {item.time && <p className="time">{item.time}</p>}
-              {/* </div> */}
+              
             </div>
           );
         })}

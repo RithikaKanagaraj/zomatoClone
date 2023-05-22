@@ -238,7 +238,6 @@ function LocationPage() {
              <Choice choice={choice}/>
            </div>
            <div className="filter-container">
-    
            <div className='filter'>
             {
               filter.map((val,index) => {
@@ -247,12 +246,18 @@ function LocationPage() {
             }
            </div>
            </div>
-           <div className='foodOrder-wrap'> <div className='foodOrder'>
-               <Order data={food} heading="Inspiration for your first order"/>
-           </div></div>
+
+
+           <div className='foodOrder-wrap'> 
+            <div className='foodOrder'>
+
+                 <Order data={food} heading="Inspiration for your first order"/> 
+            </div>
+           </div>
           
     
            <div className='hotelDetails '>
+           
               <Order data={hotel} heading="Top brands for you" />
            </div>
     
