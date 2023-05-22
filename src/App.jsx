@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import IndexPage from './Pages/IndexPage/IndexPage'
 import LocationPage from './Pages/LocationPage/LocationPage'
 import {Routes,Route} from "react-router-dom"
+import CountryCode from './Components/LogIn/CountryCode/CountryCode'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<IndexPage />}></Route>
         <Route path='coimbatore' element={<LocationPage />}></Route>
       </Routes>
+      <CountryCode />
       </div>
   )
 }

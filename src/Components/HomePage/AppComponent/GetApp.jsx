@@ -22,13 +22,11 @@ function GetApp() {
 
     const {values,touched,handleBlur,handleChange,errors,handleSubmit}=useFormik({
         initialValues:{
-            Email:''
+            Email:""
         },
-        validationSchema:basicSchema,
+        validationSchema: basicSchema,     
         onSubmit
-        
     });
-    console.log(errors.initialValues)
 
   return (
     <div className='Zomato-app'>
@@ -55,10 +53,10 @@ function GetApp() {
                                 value={values}
                                 onBlur={handleBlur}
                                 onChange={handleChange}
-                                className={errors.Email && touched.Email ? "input-error" : ''}
+                                className={errors[item.name] && touched[item.name] ? "input-error" : ""}
                             />
                             {errors.Email && (
-                                <p className='error-message'>{ errors.Email}</p>
+                                <p className='error-message'>{errors.Email}</p>
                             )}
                             </div>
                         ))}
