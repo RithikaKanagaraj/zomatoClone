@@ -27,3 +27,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+input.input-error,
+select.input-error{
+    border-color:#fc8181 ;
+}

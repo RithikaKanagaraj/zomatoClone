@@ -3,10 +3,15 @@ import Input from '../InputBox/Input';
 import './Signup.css'
 import { Formik, useFormik } from 'formik';
 import LoginOption from '../LoginOption';
+import {basicSchema} from '../../LogIn/Form-Schema/SchemaForm'
+
 
 function Signup({handleChanges}) {
 
 
+  const onSubmit=()=>{
+    console.log(12345)
+  }
 
   const google=[{
 
@@ -16,7 +21,7 @@ function Signup({handleChanges}) {
     }]
 
     const details=[{
-      name:"Full Name",
+      name:"FullName",
       type:"text"
     },{
       name:"Email",
@@ -24,14 +29,16 @@ function Signup({handleChanges}) {
     }]
 
 
-    const formik=useFormik({
+    const {values,touched,handleBlur,handleChange,errors,handleSubmit}=useFormik({
       initialValues:{
-          Email:''
+          Email:"",
+          FullName:""
       },
-      
+      validationSchema:basicSchema,
+      onSubmit
   });
 
-    
+    console.log(errors)
 
     
   return (
@@ -44,14 +51,19 @@ function Signup({handleChanges}) {
             
         </section>
         <section className='sign-body'>
-          <form autoComplete='off'>
-          <Input data={details} value={formik.values.Email} onBlur={formik.handleBlur} onChange={formik.handleChange}/>
+          <form onSubmit={handleSubmit} autoComplete='off'>
+          <Input data={details}
+           value={values}
+            onBlur={handleBlur} 
+            onChange={handleChange}
+            className={errors.Email && errors.FullName && touched.Email && touched.FullName ? "input-error" : ''}/>
+          
+          
           <div className='checkbox-div'>
             <input type="checkbox" className="check-box" />
             <p className='policy'>I agree to Zomato's <span className='highLights'>Terms of Service</span>,<span className='highLights'>Privacy Policy</span> and <span className='highLights'>Content Policies</span></p>
           </div>
           <button className='account-button'>Create account</button>
-          
         </form>
           <div className='or-option-sign'>
                 <hr className='hr-line'></hr>
