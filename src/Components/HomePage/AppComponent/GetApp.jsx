@@ -16,7 +16,7 @@ function GetApp() {
 
     const formik=useFormik({
         initialValues:{
-            email:''
+            Email:'kishore'
         },
         
     });
@@ -40,14 +40,14 @@ function GetApp() {
                     </div>
                     <div className='text-box'>
 
-                    <Input data={data} value={formik.values.email} onChange={formik.handleChange}/>
+                    <Input data={data} value={formik.values.Email} onBlur={formik.handleBlur} onChange={formik.handleChange}/>
                     <div className='button-link'>
                     <LoginButton data="Share App Link" />
                     </div>
                     </div>
+                </form>
                     <p className='Download'>Download app from</p>
                         <Download />
-                </form>
             </div>
         </div>
     </div>

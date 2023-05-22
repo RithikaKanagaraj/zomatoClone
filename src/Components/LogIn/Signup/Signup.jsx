@@ -26,7 +26,7 @@ function Signup({handleChanges}) {
 
     const formik=useFormik({
       initialValues:{
-          email:''
+          Email:''
       },
       
   });
@@ -45,13 +45,14 @@ function Signup({handleChanges}) {
         </section>
         <section className='sign-body'>
           <form autoComplete='off'>
-          <Input data={details}/>
+          <Input data={details} value={formik.values.Email} onBlur={formik.handleBlur} onChange={formik.handleChange}/>
           <div className='checkbox-div'>
             <input type="checkbox" className="check-box" />
             <p className='policy'>I agree to Zomato's <span className='highLights'>Terms of Service</span>,<span className='highLights'>Privacy Policy</span> and <span className='highLights'>Content Policies</span></p>
           </div>
           <button className='account-button'>Create account</button>
           
+        </form>
           <div className='or-option-sign'>
                 <hr className='hr-line'></hr>
                 <div className='or'>or</div>
@@ -59,7 +60,6 @@ function Signup({handleChanges}) {
           <div className='google-btn-div'>
             <LoginOption data={google}/></div>
           <p className='sign-foot'>Already have an account? <span className='create-account'>Log in</span></p>
-        </form>
         </section>
         </div>
         

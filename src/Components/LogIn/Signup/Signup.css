@@ -53,17 +53,13 @@
     border-color: rgb(156, 156, 156);
 }
 .or-option-sign{
-    margin-top: .4rem;
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
 }
-.google-btn-div{
-    margin-top: 1rem;
-}
+
 .sign-foot{
-    margin-top: 1rem;
     font-size: 1rem;
     color: rgb(51, 51, 51);
     text-align: left;
