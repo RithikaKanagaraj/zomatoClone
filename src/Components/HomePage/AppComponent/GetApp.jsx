@@ -12,6 +12,7 @@ function GetApp() {
         name:"Email"
     }]
 
+    
 
 
   return (
@@ -22,7 +23,7 @@ function GetApp() {
             <img className="image-mobile" src='https://res.cloudinary.com/dhtamjbrq/image/upload/v1684472959/Zomato/download_sgohcm.avif'></img>
             </div>
             <div className='form-page'>
-                <form>
+                <form autoComplete='off'>
                     <h2 className='app-head'>Get the Zomato app</h2>
                     <p className='app-subtitle'>We will send you a link, open it on your phone to download the app</p>
                     <div className='radio-div'>
