@@ -51,7 +51,7 @@ function Main() {
  
     
   return (
-   
+   <div>
     <div className='footer-content'>
       {
         foot.map((item,index)=>{
@@ -70,6 +70,12 @@ function Main() {
           )
         })
       }
+
+    </div>
+       <hr className='footer-hr'></hr>
+       <p className='copy-rights'>
+       By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2023 © Zomato™ Ltd. All rights reserved.
+       </p>
     </div>
   
   )
