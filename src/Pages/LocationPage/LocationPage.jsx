@@ -257,7 +257,6 @@ function LocationPage() {
           
     
            <div className='hotelDetails '>
-           
               <Order data={hotel} heading="Top brands for you" />
            </div>
     

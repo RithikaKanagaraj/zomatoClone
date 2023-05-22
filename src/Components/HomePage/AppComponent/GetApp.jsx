@@ -44,14 +44,20 @@ function GetApp() {
                         <RadioButton />
                         </section>
                     </div>
-                    <div className='text-box'>
+                        <div className='text-input-box'>
+                        {
+                            data.map((item,index)=>{
+                                return <Input name={item.name} 
+                                type={item.type}
+                                value={values.initialValues}
+                                onBlur={handleBlur} 
+                                onChange={handleChange}
+                                className={errors.initialValues ? "input-error" : ''}/>
+        
+                            })
+                        }
 
-                    <Input data={data} 
-                        value={values.initialValues}
-                        onBlur={handleBlur} 
-                        onChange={handleChange}
-                        className={errors.initialValues ? "input-error" : ''}/>
-
+                    
 
 
                     <div className='button-link'>

@@ -52,13 +52,19 @@ function Signup({handleChanges}) {
         </section>
         <section className='sign-body'>
           <form onSubmit={handleSubmit} autoComplete='off'>
-          <Input data={details}
-           value={values}
-            onBlur={handleBlur} 
-            onChange={handleChange}
-            className={errors.Email && errors.FullName && touched.Email && touched.FullName ? "input-error" : ''}/>
-          
-          
+            <div className='text-box'>
+
+          {
+            details.map((item,index)=>{
+              return <Input name={item.name} type={item.type} value={values} 
+                onBlur={handleBlur}
+                onChange={handleChange}
+                 className={errors.Email && errors.FullName && touched.Email && touched.FullName ? "input-error" : ''}/>
+ 
+            })
+          }        
+            </div>
+      
           <div className='checkbox-div'>
             <input type="checkbox" className="check-box" />
             <p className='policy'>I agree to Zomato's <span className='highLights'>Terms of Service</span>,<span className='highLights'>Privacy Policy</span> and <span className='highLights'>Content Policies</span></p>

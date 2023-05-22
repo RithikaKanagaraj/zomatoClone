@@ -2,7 +2,7 @@ import { ErrorMessage } from 'formik';
 import React from 'react'
 import './Input.css'
 
-function Input({data,value,onChange,onBlur,className}) {
+function Input({name,type,value,onChange,onBlur,className}) {
 
   
   const emailValue = value && value.Email ? value.Email : '';
@@ -10,23 +10,18 @@ function Input({data,value,onChange,onBlur,className}) {
 
   return (
     <div className='login-body'>
-        {
-        data.map((item,index)=>{
-            return(
-            <div key={index}>
-              <input id={item.name} 
+       
+          
+            <input id={name} 
              className={`signup-inbox ${className}`} 
-              type={item.type} 
-              placeholder={item.name === 'Email' ? 'Email' : 'Full Name'}
-              value={item.name==='Email' ? emailValue : fullNameValue}
+              type={type} 
+              placeholder={name === 'Email' ? 'Email' : 'Full Name'}
+              value={name==='Email' ? emailValue : fullNameValue}
               onChange={onChange}
                onBlur={onBlur} 
-               name={item.name} />
-            </div>
-                
-            )
-        })
-        }
+               name={name} />
+              
+            
     </div>
   )
 }

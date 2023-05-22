@@ -65,4 +65,8 @@
     text-align: left;
 }
 
-
+.text-box{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
