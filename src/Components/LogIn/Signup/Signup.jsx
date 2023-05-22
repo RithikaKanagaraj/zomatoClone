@@ -59,7 +59,7 @@ function Signup({handleChanges}) {
               return <Input name={item.name} type={item.type} value={values} 
                 onBlur={handleBlur}
                 onChange={handleChange}
-                 className={errors.Email && errors.FullName && touched.Email && touched.FullName ? "input-error" : ''}/>
+                 className={errors[item.name] && touched[item.name] ? "input-error" : ''}/>
  
             })
           }        

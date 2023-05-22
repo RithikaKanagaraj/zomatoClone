@@ -52,7 +52,7 @@ function GetApp() {
                                 value={values.initialValues}
                                 onBlur={handleBlur} 
                                 onChange={handleChange}
-                                className={errors.initialValues ? "input-error" : ''}/>
+                                className={errors.Email ? "input-error" : ''}/>
         
                             })
                         }
