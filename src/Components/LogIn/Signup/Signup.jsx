@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import Input from '../InputBox/Input';
 import './Signup.css'
-import App from '../../../App'
+import { Formik, useFormik } from 'formik';
 import LoginOption from '../LoginOption';
 
 function Signup({handleChanges}) {
@@ -24,6 +24,12 @@ function Signup({handleChanges}) {
     }]
 
 
+    const formik=useFormik({
+      initialValues:{
+          email:''
+      },
+      
+  });
 
     
 
@@ -38,18 +44,22 @@ function Signup({handleChanges}) {
             
         </section>
         <section className='sign-body'>
+          <form autoComplete='off'>
           <Input data={details}/>
           <div className='checkbox-div'>
             <input type="checkbox" className="check-box" />
             <p className='policy'>I agree to Zomato's <span className='highLights'>Terms of Service</span>,<span className='highLights'>Privacy Policy</span> and <span className='highLights'>Content Policies</span></p>
           </div>
           <button className='account-button'>Create account</button>
-          <div className='or-option'>
+          
+          <div className='or-option-sign'>
                 <hr className='hr-line'></hr>
                 <div className='or'>or</div>
           </div>
-          <div ><LoginOption data={google}/></div>
-          <p className='login-foot'>Already have an account? <span className='create-account'>Log in</span></p>
+          <div className='google-btn-div'>
+            <LoginOption data={google}/></div>
+          <p className='sign-foot'>Already have an account? <span className='create-account'>Log in</span></p>
+        </form>
         </section>
         </div>
         

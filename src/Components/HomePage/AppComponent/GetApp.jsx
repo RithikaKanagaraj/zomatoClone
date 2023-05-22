@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useState} from 'react'
+import { Formik, useFormik } from 'formik';
 import Input from '../../LogIn/InputBox/Input'
 import LoginButton from '../../LogIn/LoginButton'
 import Download from '../Footer/DownloadFrom/Download'
@@ -9,11 +10,17 @@ function GetApp() {
 
 
     const data=[{
-        name:"Email"
+        name:"Email",
+        type:"email"
     }]
 
-    
-
+    const formik=useFormik({
+        initialValues:{
+            email:''
+        },
+        
+    });
+    console.log(formik)
 
   return (
     <div className='Zomato-app'>
@@ -33,7 +40,7 @@ function GetApp() {
                     </div>
                     <div className='text-box'>
 
-                    <Input data={data}/>
+                    <Input data={data} value={formik.values.email} onChange={formik.handleChange}/>
                     <div className='button-link'>
                     <LoginButton data="Share App Link" />
                     </div>
