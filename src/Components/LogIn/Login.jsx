@@ -1,7 +1,8 @@
-import {useRef} from 'react'
+import {useRef,useState} from 'react'
 import './Login.css'
 import LoginButton from './LoginButton';
 import LoginOption from './LoginOption'
+import CountryCode from './CountryCode/CountryCode';
 
 
 
@@ -18,7 +19,11 @@ const modeofLogin=[{
 
   const inputRef = useRef(null);
 
+  const[active,setActive]= useState(false);
 
+  function handleClick(){
+      setActive((active)=> !active);
+    }
 
   const handleFocus = () => {
     inputRef.current.style.border = '2px solid #008080';
@@ -44,10 +49,10 @@ const modeofLogin=[{
                      
                       <img className='country-flag' src='https://res.cloudinary.com/dhtamjbrq/image/upload/v1684213642/Zomato/in_aqd7tt.webp'></img>
                       <div className='country-code'>+91</div>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cdAyKd"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" onClick={handleClick} fill="#1C1C1C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cdAyKd"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg>
 
                     </div>
-                    {/* {active && <CountryCode active={active} handleClick={handleClick}/>} */}
+                    {active && <CountryCode active={active} handleClick={handleClick}/>}
 
 
                     <div className='separation-line'></div>

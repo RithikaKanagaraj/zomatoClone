@@ -13,7 +13,7 @@ function App() {
         <Route path='/' element={<IndexPage />}></Route>
         <Route path='coimbatore' element={<LocationPage />}></Route>
       </Routes>
-      <CountryCode />
+      {/* <CountryCode /> */}
       </div>
   )
 }
