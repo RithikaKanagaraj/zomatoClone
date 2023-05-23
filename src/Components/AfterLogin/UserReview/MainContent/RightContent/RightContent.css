@@ -1,9 +1,33 @@
 .review-right-div{
     position: relative;
     width: 100%;
-    -webkit-box-flex: 0;
     flex-grow: 0;
     flex-shrink: 0;
     max-width: 66.6667%;
     padding: 0px 0px 20px 10px;
+}
+.review-right-heading{
+    line-height: 1.2;
+    margin: 0px 0px 2.3rem;
+    color: rgb(28, 28, 28);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.review-right-main{
+    margin: 2rem 0px 5rem;
+    text-align: center;
+}
+.review-right-image-div{
+    position: relative;
+    /* max-width: 100%; */
+    width: 11rem;
+    height: 10rem;
+    overflow: hidden;
+}
+.review-right-image-content{
+    line-height: 1.5;
+    margin: 1.5rem 0px 0px;
+    color: rgb(54, 54, 54);
+    text-align: center;
+    font-size: 1.3rem;
 }
