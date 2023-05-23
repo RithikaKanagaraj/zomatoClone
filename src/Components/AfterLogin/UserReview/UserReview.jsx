@@ -2,7 +2,7 @@ import React from 'react'
 import './UserReview.css'
 function UserReview() {
   return (
-    <div className='review-main'>
+    
         <div className='review-content'>
             <div className='review-content-main'>
                 <div className='review-profile'>
@@ -35,8 +35,7 @@ function UserReview() {
                 </div>
             </div>
         </div>
-        
-    </div>
+  
   )
 }
 

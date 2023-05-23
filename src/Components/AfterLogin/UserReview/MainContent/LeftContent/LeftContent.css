@@ -1,0 +1,13 @@
+.left-menu-div{
+    position: relative;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 33.3333%;
+    padding: 0px 10px 20px 0px;
+}
+.review-left-menu{
+    margin-bottom: 2rem;
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 8px;
+}

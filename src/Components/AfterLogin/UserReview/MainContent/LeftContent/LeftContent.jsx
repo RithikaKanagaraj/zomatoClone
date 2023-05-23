@@ -1,0 +1,50 @@
+import React from 'react'
+import LeftMenu from './LeftMenu'
+import './LeftContent.css'
+
+function LeftContent() {
+
+  const menus=[{
+    heading:"Activity",
+    list:[
+      "Reviews",
+      "Photos",
+      "Followers",
+      "Recently Viewed",
+      "Bookmarks",
+      "Blog Posts",
+    ]
+  },{
+    heading:"Online Ordering",
+    list:[
+      "Order History",
+      "My addresses",
+      "Favourite Orders"
+    ]
+  },{
+    heading:"Payments",
+    list:[
+      "Zomato Credits",
+      "Manage Wallets",
+      "Manage Cards"
+    ]
+  },{
+    heading:"Table Booking",
+    list:[
+      "Your Bookings"
+    ]
+  }]
+  return (
+    <div className='left-menu-div'>
+        
+      {
+        menus.map((item,index)=>{
+          return <LeftMenu key={index} heading={item.heading} list={item.list} />
+        })
+      }
+    </div>
+    
+  )
+}
+
+export default LeftContent

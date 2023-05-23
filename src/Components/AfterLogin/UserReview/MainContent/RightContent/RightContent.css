@@ -1,0 +1,9 @@
+.review-right-div{
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 66.6667%;
+    padding: 0px 0px 20px 10px;
+}
