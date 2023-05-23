@@ -10,15 +10,11 @@ import SearchBar from '../SearchBar/SearchBar';
 
 function Navbar() {
 
-  // const[active,setActive]= useState(false);
 
 
   const { open, handleChange  } = LoginState();
   const {available,handleChanges} = SignupState();
 
-  
-
-  
 
   return (
     <nav className='nav'>
