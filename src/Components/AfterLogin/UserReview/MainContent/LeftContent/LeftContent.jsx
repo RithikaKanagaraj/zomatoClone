@@ -1,6 +1,7 @@
 import React from 'react'
 import LeftMenu from './LeftMenu'
 import './LeftContent.css'
+import Suggested from './Suggested/Suggested'
 
 function LeftContent() {
 
@@ -43,6 +44,9 @@ function LeftContent() {
           return <LeftMenu key={index} heading={item.heading} list={item.list} />
         })
       }
+      <div className='review-left-menu'> 
+      <Suggested />
+      </div>
     </div>
     
   )

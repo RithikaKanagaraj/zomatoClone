@@ -1,0 +1,57 @@
+.menu-left-div{
+    position: relative;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 33.3333%;
+    padding: 0px 10px 20px 0px;
+}
+.row-div{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+
+}
+.suggest-body{
+    padding: 0px 2rem 1.5rem 2rem;
+}
+.suggest-img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+.review-followers{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.follower-name{
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    color: rgb(28, 28, 28);
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 12rem;
+}
+.reviews-count{
+    font-size: .8rem;
+    color: rgb(130, 130, 130);
+}
+
+.dot{
+    
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: rgb(130, 130, 130);
+}
+.suggest-svg{
+    cursor: pointer;
+    padding: 0.5rem;
+    background: rgb(255, 246, 247);
+    border-radius: 50%;
+}
