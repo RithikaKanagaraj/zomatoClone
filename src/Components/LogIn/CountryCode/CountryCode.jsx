@@ -1,7 +1,13 @@
 import React from 'react'
 import './CountryCode.css'
 
-function CountryCode() {
+function CountryCode({ onSelectCountry }) {
+
+
+    const handleCountryClick = (country) => {
+        onSelectCountry(country);
+      };
+    
 
 
     const data=[{
@@ -76,7 +82,7 @@ function CountryCode() {
             {
               data.map((item,index)=>{
                 return(
-                <div className='country-details-div' key={index}>
+                <div className='country-details-div' key={index} onClick={() => handleCountryClick(item)}>
                     <img className='country-flag' src={item.img}></img>
                     <div className='country-name'>{item.country}</div>
                     <div className='separation-line'></div>
