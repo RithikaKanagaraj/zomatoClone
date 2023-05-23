@@ -65,7 +65,7 @@
 .right-menu{
     display: flex;
     justify-content: space-evenly;
-    gap: 2rem;
+    gap: 1rem;
     width: 50%;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -79,7 +79,12 @@
     border-radius: 0.6rem;
 }
 
-
+.right-login-signup{
+    font-size: 1.1rem;
+    display: flex;
+    color: rgb(255, 255, 255);
+    gap: 1rem;
+}
 
 
 .wrapper{

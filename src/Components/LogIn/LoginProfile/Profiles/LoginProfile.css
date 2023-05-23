@@ -2,7 +2,7 @@
     cursor: pointer;
     position: absolute;
     top: 1rem; 
-    right: 5rem;
+    right: 2rem;
 }
 .profile-inner-div{
     display: flex;
@@ -19,7 +19,7 @@
     font-size: 1rem;
     font-weight: 500;
     margin: 0px 0.5rem;
-    color: rgb(255, 255, 255);
+    color: #0c0d0d;
     max-width: 9rem;
     overflow: hidden;
     text-overflow: ellipsis;

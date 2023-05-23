@@ -1,9 +1,11 @@
-import React from 'react'
+import {useState} from 'react'
 import './Header.css'
 import Login from '../../LogIn/Login';
 import Signup from '../../LogIn/Signup/Signup'
 import {LoginState} from '../../LogIn/GlobalState/LoginState'
 import {SignupState} from '../../LogIn/GlobalState/SignupState'
+import LoginProfile from '../../LogIn/LoginProfile/Profiles/LoginProfile';
+
 
 
 import SearchBar from '../../SearchBar/SearchBar'
@@ -14,6 +16,18 @@ function Header() {
 
   const { open, handleChange  } = LoginState();
   const {available,handleChanges} = SignupState();
+
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setLoggedIn(!loggedIn);
+  };
+
+  const handleLogout = () => {
+    setLoggedIn(false);
+  };
+
+
 
   return (
     <div>
@@ -29,17 +43,24 @@ function Header() {
                         <div className='get-app'>Get the App</div>
                     </div>
                     <div className='right-menu'>
-                    <p className='right-link'>Investor Relations</p>
-                    <p className='right-link'>Add restaurant</p>
-                    
-
-                    <p className='right-link' onClick={handleChange}>Log in</p>
-                    
-                     {open && <Login open={open} handleChange={handleChange}/>}
-
-                    <p className='right-link' onClick={handleChanges}>Sign up</p>
-                      {available && <Signup available={available} handleChanges={handleChanges}/>}
-
+                    <div className='right-link'>Investor Relations</div>
+                    <div className='right-link'>Add restaurant</div>
+                    <div className='right-login-signup'>
+                    {loggedIn ? (
+                    <LoginProfile handleLogout={handleLogout} styleColor="#ffff" />
+                    ) : (
+                    <>
+                        <div className='login' onClick={handleChange}>
+                        Log in
+                        </div>
+                        {open && <Login open={open} handleChange={handleChange} handleLogin={handleLogin} />}
+                        <div className='signup' onClick={handleChanges}>
+                        Sign up
+                        </div>
+                        {available && <Signup available={available} handleChanges={handleChanges} handleLogin={handleLogin} />}
+                    </>
+                    )}
+                    </div>
                     </div>
                 </nav>
             </div>
