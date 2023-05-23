@@ -3,6 +3,7 @@ import './Review.css'
 import Navbar from '../../Navbar/Navbar'
 import UserReview from './UserReview'
 import MainContent from './MainContent/MainContent'
+import Footer from '../../HomePage/Footer/Footer'
 
 function Review() {
   return (
@@ -15,6 +16,7 @@ function Review() {
         <UserReview  />
         <MainContent />
         </div>
+        <Footer/>
     </div>
   )
 }

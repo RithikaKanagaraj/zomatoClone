@@ -1,11 +1,12 @@
 .review-main{
     position: relative;
-    max-width: 110rem;
+    max-width: 68rem;
     max-height: initial;
-    margin: 0px 5.3rem;
+    margin: 0px auto;
+    width: 100%;
 }
 .review-content{
-    height: 13.4rem;
+    height: 13.5rem;
     position: relative;
     margin-bottom: 3rem;
     background: linear-gradient(rgba(0, 0, 0, 0.13) 22.25%, rgba(0, 0, 0, 0.5) 55.5%) center center / cover no-repeat, url(https://res.cloudinary.com/dhtamjbrq/image/upload/v1684826542/Zomato/download_db3ckr.avif);
@@ -87,7 +88,7 @@
 .count-separation{
     display: flex;
     flex-direction: column;
-    padding: 0px 1rem;
+    padding: 0px 0.5rem;
     height: min-content;
     border-right: 1px solid rgba(255, 255, 255, 0.9);
     text-align: center;

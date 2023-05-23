@@ -36,6 +36,7 @@ function LeftContent() {
   }]
   return (
     <div className='left-menu-div'>
+        <div className='select-background'></div>
         
       {
         menus.map((item,index)=>{

@@ -11,7 +11,7 @@ function LeftMenu({heading,list}) {
       <h4 className='left-menu-heading'>{heading}</h4>
       <ul>
         {list.map((item, index) => (
-          <li className='left-menu-list' key={index}>{item}</li>
+          <li className='left-menu-list name-style' key={index}>{item}</li>
         ))}
       </ul>
  
