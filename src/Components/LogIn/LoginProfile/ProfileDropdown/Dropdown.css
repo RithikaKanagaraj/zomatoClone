@@ -1,0 +1,28 @@
+.dropdown-wrapper{
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
+    z-index: 10;
+    visibility: visible;
+    opacity: 1;
+    width: 10rem;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: rgb(28 28 28 / 15%) 0px 2px 8px;
+    transform: translateY(20px);
+    transition: transform 0.25s ease 0s, opacity 0.25s ease 0s;
+    overflow: hidden;
+}
+
+.dropdown-categories{
+        cursor: pointer;
+        font-size: .9rem;
+        width: 100%;
+        padding: .8rem .8rem .4rem .8rem;
+        background: rgb(255, 255, 255);
+        text-align: left;
+}
+.dropdown-categories:hover{
+    background-color: rgb(228, 220, 220);
+
+}
