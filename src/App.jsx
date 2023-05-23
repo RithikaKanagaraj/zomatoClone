@@ -4,8 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import IndexPage from './Pages/IndexPage/IndexPage'
 import LocationPage from './Pages/LocationPage/LocationPage'
 import {Routes,Route} from "react-router-dom"
-import Dropdown from './Components/LogIn/LoginProfile/ProfileDropdown/Dropdown'
-import LoginProfile from './Components/LogIn/LoginProfile/Profiles/LoginProfile'
+import Review from './Components/AfterLogin/UserReview/Review'
 
 function App() {
   return (
@@ -13,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<IndexPage />}></Route>
         <Route path='coimbatore' element={<LocationPage />}></Route>
+        <Route path='reviews' element={<Review />}></Route>
       </Routes>
       {/* <LoginProfile /> */}
       </div>

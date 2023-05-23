@@ -1,0 +1,102 @@
+.review-main{
+    position: relative;
+    max-width: 110rem;
+    max-height: initial;
+    margin: 0px 5.3rem;
+}
+.review-content{
+    height: 13.4rem;
+    position: relative;
+    margin-bottom: 3rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.13) 22.25%, rgba(0, 0, 0, 0.5) 55.5%) center center / cover no-repeat, url(https://res.cloudinary.com/dhtamjbrq/image/upload/v1684826542/Zomato/download_db3ckr.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.review-content-main{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 2.5rem;
+    padding: 0px 1.7rem;
+    align-items: center;
+    border: 1px snow;
+}
+.review-profile{
+    display: flex;
+    align-items: center;
+}
+.review-profile-image{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 0.4rem solid rgb(255, 255, 255);
+}
+.review-profile-name{
+    margin-left: 1rem;
+    width: 55%;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+.review-profile-right{
+    display: flex;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1rem;
+    gap:1rem;
+    flex-direction: column;
+}
+.edit-button-div{
+    min-height: 36px;
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: end;
+    border-radius: 0.6rem;
+    background: transparent;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-button{
+    gap: .5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+   
+    min-height: 36px;
+    line-height: 1rem;
+    margin-top: 0px;
+    white-space: nowrap;
+    font-size: .9rem;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    background: border-box rgb(239, 79, 95);
+    border-color: rgb(239, 79, 95);
+    border-radius: 0.6rem;
+    padding: 0px 1rem;
+    outline: none !important;
+}
+.review-right-separation{
+        display: flex;
+}
+.count-separation{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 1rem;
+    height: min-content;
+    border-right: 1px solid rgba(255, 255, 255, 0.9);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.count-separation:last-child {
+    border-right: none;
+    padding-right: 0px;
+}
