@@ -2,6 +2,7 @@ import React from 'react'
 import LeftMenu from './LeftMenu'
 import './LeftContent.css'
 import Suggested from './Suggested/Suggested'
+import ProfileWidget from './ProfileWidget/ProfileWidget'
 
 function LeftContent() {
 
@@ -46,6 +47,10 @@ function LeftContent() {
       }
       <div className='review-left-menu'> 
       <Suggested />
+      </div>
+      <div className='review-left-menu'>
+
+      <ProfileWidget />
       </div>
     </div>
     

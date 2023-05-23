@@ -1,0 +1,28 @@
+.widget-subtitle{
+    color: rgb(85, 83, 83);
+    font-size: .8rem;
+    margin: 0px 2rem;
+}
+.widget-image{
+    position: relative;
+    max-width: 100%;
+    width: 16rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    margin: 1rem 2rem;
+}
+
+.get-widget{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: flex-start;
+    line-height: 36px;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(239, 79, 95);
+    padding: 0px 1.6rem;
+   
+}

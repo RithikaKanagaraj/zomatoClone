@@ -44,10 +44,10 @@
 
 .dot{
     
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        background-color: rgb(130, 130, 130);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgb(130, 130, 130);
 }
 .suggest-svg{
     cursor: pointer;
