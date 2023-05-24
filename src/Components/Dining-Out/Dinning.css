@@ -1,0 +1,11 @@
+.dinning-body{
+    height: 31rem;
+    padding: .1rem 0px ;
+    background: rgb(248, 248, 248);
+}
+.collection-dinning-div{
+    position: relative;
+    max-width: 69rem;
+    max-height: initial;
+    margin: 2rem auto;
+}
