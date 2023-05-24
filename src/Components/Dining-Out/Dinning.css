@@ -9,3 +9,9 @@
     max-height: initial;
     margin: 2rem auto;
 }
+.heroContent{
+    position: relative;
+    max-width: 69rem;
+    max-height: initial;
+    margin: 2rem auto;
+}

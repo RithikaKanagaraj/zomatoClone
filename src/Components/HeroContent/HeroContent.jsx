@@ -1,43 +1,40 @@
-import React from "react";
-import "./HeroSection.css";
+import React from 'react'
+import './HeroContent.css'
 
-function HeroSection({ bestFood, heading }) {
+function HeroContent({img,time,offer,rating,name,foodItems,trending,price,heading}) {
   return (
-    <div>
-      <h3 className="heading">{heading}</h3>
-      <div className="container">
-          {bestFood.map((item, index) => {
-            return (
-              <div className="cards" key={index}>
+    
+        <div className='dinning-card-div'>
+            <div className='dinning-card-inner'>
                 <div className="card-div">
-                <img className="card-img" src={item.img} />
-                <div className="card-overlay">{item.offer}</div>
-                <div className="item-time">{item.time}</div>
+                    <img className='dinning-image' src={img}></img>
+
+                    <div className="card-overlay">{offer}</div>
+                    <div className="item-time">{time}</div>
                 </div>
-                
                 <div className="card-detail">
-                    <div className="hotel-name">{item.name}</div>
+                    <div className="hotel-name">{name}</div>
                     <div className="rating-div">
-                        <div>{item.rating}</div>
+                        <div>{rating}</div>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="0.5rem" height="0.5rem" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 fauQLv"><title>star-fill</title><path d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"></path></svg>
                     </div>
                 </div>
+
                 <div className="card-detail">
-                    <div className="hotel-foods">{item.foodItems}</div>
-                        <p className="food-price">{item.price}</p>
+                    <div className="hotel-foods">{foodItems}</div>
+                        <p className="food-price">{price}</p>
                 </div>
-                <div className="bottom-line"></div>
+
                 <div className="card-detail">
                         <img className="trend" src="https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp"></img>
-                        <div className="hotel-trending">{item.trending}</div>
+                        <div className="hotel-trending">{trending}</div>
                         <img className="delivery" src="https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp"/>
                 </div>
-              </div>
-            );
-          })}
-      </div>
-    </div>
-  );
+            </div>
+        </div>
+         
+    
+  )
 }
 
-export default HeroSection;
+export default HeroContent

@@ -1,9 +1,9 @@
 import React from 'react'
 import '../../App.css'
+import '../Dining-Out/Dinning.css'
 import Filter from '../Filter/Filter'
 import Order from '../Orders/Order'
-const Admin = React.lazy(() => import('../HeroSection/HeroSection'));
-
+import HeroContent from '../HeroContent/HeroContent'
 
 
 function Delivery() {
@@ -244,7 +244,22 @@ function Delivery() {
     
             <div className='heroSection'>
               
-              <Admin bestFood={bestFood} heading="Best Food in Coimbatore"/>
+            <h3 className="heading">Best Foods in Coimbatore</h3>
+            <div className='dinning-grid'>           
+              {
+                bestFood.map((item,index)=>{
+                  return <HeroContent key={index} img={item.img} 
+                                  time={item.time} 
+                                  offer={item.offer} 
+                                  name={item.name} 
+                                  rating={item.rating} 
+                                  foodItems={item.foodItems}
+                                  trending={item.trending}
+                                  price={item.price} />
+                })
+              }
+              
+              </div>
 
             </div>
     
