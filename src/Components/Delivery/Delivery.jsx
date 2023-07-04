@@ -242,9 +242,9 @@ function Delivery() {
               <Order data={hotel} heading="Top brands for you" />
            </div>
     
-            <div className='heroSection'>
-              
+            <div className='heroContent'>
             <h3 className="heading">Best Foods in Coimbatore</h3>
+            
             <div className='dinning-grid'>           
               {
                 bestFood.map((item,index)=>{

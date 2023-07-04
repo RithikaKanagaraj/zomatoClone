@@ -6,12 +6,14 @@ import Download from '../Footer/DownloadFrom/Download'
 import './GetApp.css'
 import RadioButton from './RadioButton/RadioButton'
 import {basicSchema} from '../../LogIn/Form-Schema/SchemaForm'
+import './RadioButton/RadioButton.css';
+
 
 function GetApp() {
 
     const onSubmit=async(values,actions)=>{
         console.log(values)
-        await new Promise((resolve)=> setTimeout(resolve,1000))
+        await new Promise((resolve)=> setTimeout(resolve,2000))
         actions.resetForm();
       }
 
@@ -20,6 +22,15 @@ function GetApp() {
         type:"email"
     }]
 
+    const radio = [
+        {
+          name: "Email"
+        },
+        {
+          name: "Phone"
+        }
+      ];
+
     const {values,touched,handleBlur,handleChange,errors,handleSubmit}=useFormik({
         initialValues:{
             Email:""
@@ -27,6 +38,18 @@ function GetApp() {
         validationSchema: basicSchema,     
         onSubmit
     });
+
+
+
+    const [selectedOption, setSelectedOption] = useState('');
+
+    const handleOptionChange = (event) => {
+      setSelectedOption(event.target.value);
+    };
+  
+
+
+
 
   return (
     <div className='Zomato-app'>
@@ -40,8 +63,19 @@ function GetApp() {
                     <h2 className='app-head'>Get the Zomato app</h2>
                     <p className='app-subtitle'>We will send you a link, open it on your phone to download the app</p>
                     <div className='radio-div'>
-                        <section className='radio-section'>
-                        <RadioButton />
+                        <section className='radio-section inner-radio'>
+                            {
+                                radio.map((item, index)=>(
+                                    <RadioButton
+                                    id={item.name}
+                                    name={item.name}
+                                    index={index}
+                                    checked={selectedOption === item.name}
+                                    onChange={handleOptionChange}
+                                />
+                                ) 
+                                )
+                            }
                         </section>
                     </div>
                     <div className='text-input-box'>

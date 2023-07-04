@@ -1,30 +1,22 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './RadioButton.css';
 
-function RadioButton() {
-  const radio = [
-    {
-      name: "Email"
-    },
-    {
-      name: "Phone"
-    }
-  ];
+function RadioButton({id,name,index,checked, onChange}) {
 
   return (
-    <div className='radio-btn'>
-      {
-        radio.map((item, index) => {
-          return (
-            <div key={index}>
-              <input type="radio" id={item.name} value={item.name} />
-              <label htmlFor={item.name} >
-              <span className="radio-name">{item.name}</span>
-              </label>
-            </div>
-          );
-        })
-      }
+    <div className='radio-btn' index={index}>
+      <input
+        type='radio'
+        id={id}
+        name={name}
+        value={name}
+        checked={checked}
+        onChange={onChange}
+      />
+      <label htmlFor={id} className={checked ? 'active' : 'non-active'}>
+      
+        <span className="radio-name">{name}</span>
+      </label>
     </div>
   );
 }

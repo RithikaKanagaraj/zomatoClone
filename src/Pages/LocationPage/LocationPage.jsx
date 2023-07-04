@@ -6,7 +6,6 @@ import Filter from '../../Components/Filter/Filter'
 import Order from '../../Components/Orders/Order'
 import Delivery from '../../Components/Delivery/Delivery'
 import HeroContent from '../../Components/HeroContent/HeroContent'
-const Admin = React.lazy(() => import('../../Components/HeroSection/HeroSection'));
 
 function LocationPage() {
     const choice=[{
@@ -159,11 +158,6 @@ function LocationPage() {
               <Order data={hotel} heading="Top brands for you" />
            </div>
     
-            <div className='heroSection'>
-              
-              <Admin bestFood={bestFood} heading="Best Food in Coimbatore"/>
-
-            </div>
      */}
 
            
