@@ -79,6 +79,6 @@
 .error-message{
     color: #fc8181 ;
     font-size: .8rem;
-    margin: 0;
+    /* margin: 0; */
     height: 10px;
 }

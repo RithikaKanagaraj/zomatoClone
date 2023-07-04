@@ -7,5 +7,10 @@ export const basicSchema=yup.object().shape({
   FullName:yup.string().
             required('Name is required')
             .min(2, 'Name must be at least 2 characters')
-            .max(50, 'Name must not exceed 50 characters')
+            .max(50, 'Name must not exceed 50 characters'),
+  PhoneNumber:yup.string()
+            .matches(
+              /^\+(?:[0-9] ?){6,14}[0-9]$/,
+              'Please enter a valid phone number')
+            .required('This field is required')
 })

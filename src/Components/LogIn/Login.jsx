@@ -3,6 +3,10 @@ import './Login.css'
 import LoginButton from './LoginButton';
 import LoginOption from './LoginOption'
 import CountryCode from './CountryCode/CountryCode';
+import { Formik, useFormik } from 'formik';
+import {basicSchema} from '../LogIn/Form-Schema/SchemaForm'
+
+
 
 
 
@@ -38,6 +42,21 @@ const modeofLogin=[{
     inputRef.current.style.borderColor = '';
   };
 
+  const onSubmit=async(values,actions)=>{
+    console.log("values",values)
+    await new Promise((resolve)=> setTimeout(resolve,1000))
+    actions.resetForm();
+  }
+
+  const {values,touched,handlesBlur,handleChanges,errors,handleSubmit}=useFormik({
+    initialValues:{
+        Phone:""
+    },
+    validationSchema: basicSchema,     
+    onSubmit
+});
+
+
     return (
       <div className='login-page'>
           <div className='login-card'>
@@ -48,25 +67,40 @@ const modeofLogin=[{
               <svg  onClick={handleChange} xmlns="http://www.w3.org/2000/svg" fill="#1C1C1C" width="24" height="24" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cdktuZ"  ><title>cross</title><path d="M11.42 10.42l3.54-3.54c0.38-0.4 0.38-1.040 0-1.42s-1.020-0.4-1.42 0l-3.54 3.54-3.54-3.54c-0.4-0.4-1.020-0.4-1.42 0s-0.38 1.020 0 1.42l3.54 3.54-3.54 3.54c-0.38 0.38-0.38 1.020 0 1.42 0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28l3.54-3.56 3.54 3.56c0.2 0.18 0.46 0.28 0.72 0.28s0.5-0.1 0.7-0.28c0.38-0.4 0.38-1.040 0-1.42l-3.54-3.54z"></path></svg>
           </section>
           <section className='login-body'>
-                <div className='input-box' ref={inputRef}  onFocus={handleFocus} onBlur={handleBlur}>
-                    
-                    <div className='flex-left'>
-                     
-                      <img className='country-flag'  src={selectedCountry ? selectedCountry.img : 'https://res.cloudinary.com/dhtamjbrq/image/upload/v1684213642/Zomato/in_aqd7tt.webp'}alt='Flag'></img>
-                      <div className='country-code'>{selectedCountry ? selectedCountry.code : '+91'}</div>
-                      <svg xmlns="http://www.w3.org/2000/svg" onClick={handleClick} fill="#1C1C1C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cdAyKd"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg>
+              <form onSubmit={handleSubmit} autoComplete='off' className='forms'>
+                  <div className='input-box' ref={inputRef}  onFocus={handleFocus} onBlur={handleBlur}>
+                      
+                      <div className='flex-left'>
+                      
+                        <img className='country-flag'  src={selectedCountry ? selectedCountry.img : 'https://res.cloudinary.com/dhtamjbrq/image/upload/v1684213642/Zomato/in_aqd7tt.webp'}alt='Flag'></img>
+                        <div className='country-code'>{selectedCountry ? selectedCountry.code : '+91'}</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" onClick={handleClick} fill="#1C1C1C" width="18" height="18" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 cdAyKd"><title>chevron-down</title><path d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"></path></svg>
 
-                    </div>
-                    {active && <CountryCode onSelectCountry={handleCountrySelect}/>}
+                      </div>
+                      {active && <CountryCode onSelectCountry={handleCountrySelect}/>}
 
 
-                    <div className='separation-line'></div>
-                    <div className='flex-right'>
-                      <input className='login-input' placeholder='Phone'/>
-                    </div>
-                </div>
-                <LoginButton data="Send One Time Password"/>
-                {/* <button className='otp-button'>Send One Time Password</button> */}
+                      <div className='separation-line'></div>
+                      <div className='flex-right'>
+                        <input
+                            className={`login-input ${errors.PhoneNumber && touched.PhoneNumber ? "input-error" : " "}`}
+                               placeholder='Phone'
+                              value={values.Phone}
+                              onChange={handleChanges}  
+                              onBlur={handlesBlur}
+                              name='Phone'
+                              type='text'
+                              />
+
+                      </div>
+                  </div>
+                   <p className='error-message'>{errors.PhoneNumber}</p>
+
+                  <LoginButton data="Send One Time Password"/>
+
+
+              </form>
+
                 <div className='or-option'>
                   <hr className='hr-line'></hr>
                   <div className='or'>or</div>

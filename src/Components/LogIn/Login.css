@@ -23,7 +23,7 @@
 .login-header{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .login-name{
     font-size: 1.8rem;
@@ -36,7 +36,13 @@
     /* margin-top: 2.5rem; */
     display: flex;
     flex-direction: column;
-    gap: 1.1rem;
+    gap: 1rem;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 125px;
 }
 .input-box{
     width: 100%;
