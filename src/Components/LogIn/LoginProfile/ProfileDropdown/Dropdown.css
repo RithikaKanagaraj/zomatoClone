@@ -21,6 +21,7 @@
         padding: .8rem .8rem .4rem .8rem;
         background: rgb(255, 255, 255);
         text-align: left;
+        color: rgb(28, 28, 28);
 }
 .dropdown-categories:hover{
     background-color: rgb(228, 220, 220);

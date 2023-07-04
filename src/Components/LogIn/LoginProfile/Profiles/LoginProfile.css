@@ -1,8 +1,8 @@
 .profile-div{
     cursor: pointer;
     position: absolute;
-    top: 1rem; 
-    right: 2rem;
+    top: 1.2rem; 
+    right: 4rem;
 }
 .profile-inner-div{
     display: flex;

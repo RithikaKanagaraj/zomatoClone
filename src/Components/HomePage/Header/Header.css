@@ -64,9 +64,9 @@
 }
 .right-menu{
     display: flex;
-    justify-content: space-evenly;
-    gap: 1rem;
-    width: 50%;
+    /* justify-content: space-evenly; */
+    gap: 3rem;
+    width: 45%;
     white-space: nowrap;
     text-overflow: ellipsis;
     /* overflow: hidden; */
@@ -83,7 +83,7 @@
     font-size: 1.1rem;
     display: flex;
     color: rgb(255, 255, 255);
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 

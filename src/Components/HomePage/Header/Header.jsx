@@ -17,7 +17,7 @@ function Header() {
   const { open, handleChange  } = LoginState();
   const {available,handleChanges} = SignupState();
 
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
 
   const handleLogin = () => {
     setLoggedIn(!loggedIn);
