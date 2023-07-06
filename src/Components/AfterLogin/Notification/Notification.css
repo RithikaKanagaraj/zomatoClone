@@ -1,0 +1,47 @@
+.notification-nav{
+    background-color: #cb202d;
+    padding: 10px 0;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.inputWrapper-nav{
+    
+        width: 20%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 1%;
+        align-items: center;
+        position: relative;
+        height: 2.5rem;
+        background: rgb(255, 255, 255);
+        border-radius: 0.2rem;
+        box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+        border: 1px solid rgb(232, 232, 232);
+    
+}
+.inputWrapper-nav-right{
+    width: 30%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 1%;
+    align-items: center;
+    position: relative;
+    height: 2.5rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.2rem;
+    box-shadow: rgb(28 28 28 / 8%) 0px 2px 8px;
+    border: 1px solid rgb(232, 232, 232);
+}
+.inputBox-nav{
+    border:none;
+    outline: none;
+    font-size: .9rem;
+    padding-left: 8px;
+    color: black;
+    font-weight:900;
+}

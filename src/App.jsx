@@ -5,6 +5,7 @@ import IndexPage from './Pages/IndexPage/IndexPage'
 import LocationPage from './Pages/LocationPage/LocationPage'
 import {Routes,Route} from "react-router-dom"
 import Review from './Components/AfterLogin/UserReview/Review'
+import Notification from './Components/AfterLogin/Notification/Notification'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<IndexPage />}></Route>
         <Route path='coimbatore' element={<LocationPage />}></Route>
         <Route path='reviews' element={<Review />}></Route>
+        <Route path='notification' element={<Notification/>}></Route>
       </Routes>
       {/* <LoginProfile /> */}
       </div>
