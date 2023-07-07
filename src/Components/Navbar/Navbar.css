@@ -4,9 +4,9 @@
     align-items: center;
     justify-content: space-around;
     height: 4.7rem;
-    width: 95%;
-    margin-left: 5%;
-    /* border-bottom: 1px solid black; */
+    max-width: 72rem;
+    margin: 0 auto;
+    width: 100%;
 }
 .logo{
     max-width: 10rem;

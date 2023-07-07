@@ -1,7 +1,7 @@
 import React from 'react'
 import './HeroContent.css'
 
-function HeroContent({img,time,offer,rating,name,foodItems,trending,price,heading}) {
+function HeroContent({img,time,offer,rating,name,foodItems,trending,price,heading,trend,delivery,distance,location}) {
   return (
     
         <div className='dinning-card-div'>
@@ -10,7 +10,12 @@ function HeroContent({img,time,offer,rating,name,foodItems,trending,price,headin
                     <img className='dinning-image' src={img}></img>
 
                     <div className="card-overlay">{offer}</div>
-                    <div className="item-time">{time}</div>
+                    {
+                        time && (
+
+                            <div className="item-time">{time}</div>
+                        )
+                    }
                 </div>
                 <div className="card-detail">
                     <div className="hotel-name">{name}</div>
@@ -24,12 +29,23 @@ function HeroContent({img,time,offer,rating,name,foodItems,trending,price,headin
                     <div className="hotel-foods">{foodItems}</div>
                         <p className="food-price">{price}</p>
                 </div>
-
+                {
+                    location && distance && (
                 <div className="card-detail">
-                        <img className="trend" src="https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp"></img>
-                        <div className="hotel-trending">{trending}</div>
-                        <img className="delivery" src="https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp"/>
+                    <div className='location'>{location}</div>
+                    <div className='distance'>{distance}</div>
+
                 </div>
+                )
+                }
+                  
+                {trend && delivery && (
+                    <div className="card-detail">
+                        <img className="trend" src={trend} ></img>
+                        <div className="hotel-trending">{trending}</div>
+                        <img className="delivery" src={delivery}/>
+                    </div>
+                )}
             </div>
         </div>
          

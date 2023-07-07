@@ -93,7 +93,7 @@
     padding: 0px 0px 0.4rem;
 }
 .food-price{
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 1.5;
     margin: 0px;
     text-align: right;
@@ -125,4 +125,27 @@
 .delivery{
     height: 1.5rem;
     width: 3rem;
+}
+.distance{
+    margin: 0px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(0.4rem);
+    border-radius: 0.4rem;
+    font-weight: 600;
+    font-size: .8rem;
+    line-height: 1.6rem;
+    color: rgb(54, 54, 54);
+    padding: 0.2rem 0.5rem 0.3rem;
+}
+.location{
+    margin: 0px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(129, 127, 127);
+    max-width: 70%;
+    padding: 0px 0px 0.4rem;
+    font-size: .9rem;
+    line-height: 1.5rem;
 }

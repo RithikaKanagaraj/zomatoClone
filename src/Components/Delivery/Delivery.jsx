@@ -115,7 +115,10 @@ function Delivery() {
       rating:"3.9",
       foodItems:"South Indian, Fast Food, Street Food, Beverages",
       price:"₹100 for one",
-      trending:"8700+ orders placed from here recently"
+      trending:"8700+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     },{
       img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128487/Zomato/385b3b6ebb1e16a08bcd4644fbc801e7_o2_featured_v2_xgqits.avif",
       time:"24 min",
@@ -124,7 +127,10 @@ function Delivery() {
       rating:"3.8",
       foodItems:"South Indian, Fast Food, Chinese, Sichuan",
       price:"₹200 for one",
-      trending:"2250+ orders placed from here recently"
+      trending:"2250+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     },{
       img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128451/Zomato/af48bade3b6565f40be493865d80bc88_o2_featured_v2_pyzofc.avif",
       time:"26 min",
@@ -133,7 +139,10 @@ function Delivery() {
       rating:"4.3",
       foodItems:"",
       price:"₹200 for one",
-      trending:"600+ orders placed from here recently"
+      trending:"600+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     },{
       img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128327/Zomato/330a4967b61928346b74c63c087f4cf7_o2_featured_v2_xbcovz.avif",
       time:"23 min",
@@ -142,7 +151,10 @@ function Delivery() {
       rating:"4.0",
       foodItems:"South Indian, Chinese, Street Food, North Indian, Sandwich, Desserts, Beverages, Shake",
       price:"₹200 for one",
-      trending:"8475+ orders placed from here recently"
+      trending:"8475+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     },{
       img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128484/Zomato/25bc1546c51e66948b5fb1bb40c37ffc_o2_featured_v2_rhkvlr.avif",
       time:"25 min",
@@ -151,7 +163,10 @@ function Delivery() {
       rating:"4.0",
       foodItems:"South Indian, North Indian, Chinese",
       price:"₹200 for one",
-      trending:"6325+ orders placed from here recently"
+      trending:"6325+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     },{
       img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128434/Zomato/d3814341a7d4ad8a87d836f19f9a1ce9_o2_featured_v2_clor5r.avif",
       time:"23 min",
@@ -160,7 +175,10 @@ function Delivery() {
       rating:"3.9",
       foodItems:"Bakery",
       price:"₹150 for one",
-      trending:"775+ orders placed from here recently"
+      trending:"775+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     },{
       img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128374/Zomato/5dffc4cfcd818c5efe39444d72a5627c_o2_featured_v2_pzde8c.avif",
       time:"29 min",
@@ -169,7 +187,10 @@ function Delivery() {
       rating:"3.9",
       foodItems:"South Indian, North Indian, Chinese",
       price:"₹150 for one",
-      trending:"7025+ orders placed from here recently"
+      trending:"7025+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     },{
       img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128317/Zomato/3324b499f276e654a972d1325b1736a2_o2_featured_v2_ltmjye.avif",
       time:"21 min",
@@ -178,7 +199,10 @@ function Delivery() {
       rating:"4.0",
       foodItems:"South Indian, Chinese, North Indian, Fast Food",
       price:"₹50 for one",
-      trending:"2575+ orders placed from here recently"
+      trending:"2575+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     },{
       img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128441/Zomato/1c96e3a37aea05ad338671dec5248d8c_o2_featured_v2_triy7t.avif",
       time:"35 min",
@@ -187,7 +211,10 @@ function Delivery() {
       rating:"3.5",
       foodItems:"South Indian",
       price:"₹300 for one",
-      trending:"7625+ orders placed from here recently"
+      trending:"7625+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     },{
       img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128311/Zomato/a67239e7f0a96f17e2b376ddf1c52b62_o2_featured_v2_ntnprg.avif",
       time:"28 min",
@@ -196,7 +223,10 @@ function Delivery() {
       rating:"4.2",
       foodItems:"South Indian, Desserts, Healthy Food",
       price:"₹100 for one",
-      trending:"1875+ orders placed from here recently"
+      trending:"1875+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     },{
       img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128257/Zomato/a9538d7eb5b3c98ff7504df8c247c83c_o2_featured_v2_hkpnbr.avif",
       time:"18 min",
@@ -205,7 +235,10 @@ function Delivery() {
       rating:"4.0",
       foodItems:"South Indian, Chinese",
       price:"₹300 for one",
-      trending:"5425+ orders placed from here recently"
+      trending:"5425+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     },{
       img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128279/Zomato/edc92b9e7877ea851a3d6f1190d1580f_o2_featured_v2_tcavun.avif",
       time:"31 min",
@@ -214,7 +247,10 @@ function Delivery() {
       rating:"3.8",
       foodItems:"Pizza, Fast Food, Desserts, Beverages",
       price:"₹100 for one",
-      trending:"2400+ orders placed from here recently"
+      trending:"2400+ orders placed from here recently",
+      trend:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129593/Zomato/download_snqdeg.webp",
+    delivery:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684129612/Zomato/0b07ef18234c6fdf9365ad1c274ae0631612687510_ogmlyb.webp",
+  
     }]
   return (
     <div>
@@ -255,7 +291,9 @@ function Delivery() {
                                   rating={item.rating} 
                                   foodItems={item.foodItems}
                                   trending={item.trending}
-                                  price={item.price} />
+                                  price={item.price}
+                                  trend={item.trend}
+                                  delivery={item.delivery} />
                 })
               }
               

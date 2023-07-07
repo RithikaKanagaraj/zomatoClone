@@ -1,0 +1,17 @@
+.nightOut-body{
+    width: 87%;
+    margin: 0rem auto;
+}
+
+.nightOut-body-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: .8rem 0px 1.5rem 0px;
+}
+
+.img-nightout{
+    height: 16rem;
+    width: 99%;
+}

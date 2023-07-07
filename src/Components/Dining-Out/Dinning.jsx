@@ -6,114 +6,103 @@ import HeroContent from '../HeroContent/HeroContent'
 
 function Dinning() {
   const bestFood=[{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128487/Zomato/385b3b6ebb1e16a08bcd4644fbc801e7_o2_featured_v2_xgqits.avif",
-    time:"24 min",
-    offer:"50% OFF up to 100",
-    name:"Sri Ganapathy Mess",
-    rating:"3.8",
-    foodItems:"South Indian, Fast Food, Chinese, Sichuan",
-    price:"₹200 for one",
-    trending:"2250+ orders placed from here recently"
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636377/Zomato/download_suizxr.avif",
+    name:"Sherlock's - Lounge & Kitchen",
+    rating:"4.1",
+    foodItems:"Cuisine Varies, Chinese, Continental, Bar Food, Oriental, Pizza, Pasta, Biryani",
+    price:"₹2,000 for two",
+    location:"Brookefields Mall, RS Puram, Coimbatore",
+    distance:"1.8 km"
   },{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128451/Zomato/af48bade3b6565f40be493865d80bc88_o2_featured_v2_pyzofc.avif",
-    time:"26 min",
-    offer:"50% OFF up to 100",
-    name:"Sri Krishna Iyer Mess",
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636389/Zomato/download_cjex3s.avif",
+    name:"The Cavern @312",
+    rating:"4.4",
+    location:"Gandhipuram, Coimbatore",
+    distance:"272 m",
+    foodItems:"Modern Indian, Continental",
+    price:"₹1300 for two",
+  },{
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636400/Zomato/download_b0kc15.avif",
+    name:"10 Downing Street",
     rating:"4.3",
-    foodItems:"",
-    price:"₹200 for one",
-    trending:"600+ orders placed from here recently"
-  },{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128327/Zomato/330a4967b61928346b74c63c087f4cf7_o2_featured_v2_xbcovz.avif",
-    time:"23 min",
-    offer:"50% OFF up to 100",
-    name:"Shree Aksshayam",
-    rating:"4.0",
+    distance:"8.6 km",
+    location:"Sitra, Coimbatore",
     foodItems:"South Indian, Chinese, Street Food, North Indian, Sandwich, Desserts, Beverages, Shake",
-    price:"₹200 for one",
-    trending:"8475+ orders placed from here recently"
+    price:"₹800 for two",
   },{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128484/Zomato/25bc1546c51e66948b5fb1bb40c37ffc_o2_featured_v2_rhkvlr.avif",
-    time:"25 min",
-    offer:"50% OFF up to 100",
-    name:"Burma Bhai Hotel",
-    rating:"4.0",
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636411/Zomato/download_u3hmwd.avif",
+    name:"Func - #6 Hotels",
+    rating:"4.9",
     foodItems:"South Indian, North Indian, Chinese",
-    price:"₹200 for one",
-    trending:"6325+ orders placed from here recently"
+    price:"₹1500 for two",
+    distance:"2.5 km",
+    location:"Saibaba Colony, Coimbatore",
   },{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128434/Zomato/d3814341a7d4ad8a87d836f19f9a1ce9_o2_featured_v2_clor5r.avif",
-    time:"23 min",
-    offer:"50% OFF up to 100",
-    name:"FB Cakes",
-    rating:"3.9",
-    foodItems:"Bakery",
-    price:"₹150 for one",
-    trending:"775+ orders placed from here recently"
-  },{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128374/Zomato/5dffc4cfcd818c5efe39444d72a5627c_o2_featured_v2_pzde8c.avif",
-    time:"29 min",
-    offer:"50% OFF up to 100",
-    name:"Guru Amuthas",
-    rating:"3.9",
-    foodItems:"South Indian, North Indian, Chinese",
-    price:"₹150 for one",
-    trending:"7025+ orders placed from here recently"
-  },{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128317/Zomato/3324b499f276e654a972d1325b1736a2_o2_featured_v2_ltmjye.avif",
-    time:"21 min",
-    offer:"50% OFF up to 100",
-    name:"RHR Restaurant",
-    rating:"4.0",
-    foodItems:"South Indian, Chinese, North Indian, Fast Food",
-    price:"₹50 for one",
-    trending:"2575+ orders placed from here recently"
-  },{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128441/Zomato/1c96e3a37aea05ad338671dec5248d8c_o2_featured_v2_triy7t.avif",
-    time:"35 min",
-    offer:"50% OFF up to 100",
-    name:"Night Lion By Madhampatty Pakashala",
-    rating:"3.5",
-    foodItems:"South Indian",
-    price:"₹300 for one",
-    trending:"7625+ orders placed from here recently"
-  },{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128311/Zomato/a67239e7f0a96f17e2b376ddf1c52b62_o2_featured_v2_ntnprg.avif",
-    time:"28 min",
-    offer:"50% OFF up to 100",
-    name:"Geetha Cafe",
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636470/Zomato/download_zt3kid.avif",
+    name:"Global Barbeque",
     rating:"4.2",
-    foodItems:"South Indian, Desserts, Healthy Food",
-    price:"₹100 for one",
-    trending:"1875+ orders placed from here recently"
+    foodItems:"South Indian, North Indian, Chinese",
+    price:"₹1200 for two",
+    distance:"2.8 km",
+    location:"Vijay Elanza Central, Peelamedu, Coimbatore",
   },{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128257/Zomato/a9538d7eb5b3c98ff7504df8c247c83c_o2_featured_v2_hkpnbr.avif",
-    time:"18 min",
-    offer:"50% OFF up to 100",
-    name:"Geetha Canteen",
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636429/Zomato/download_ce03wr.avif",
+    name:"Black Box  - The Arcadia Hotel",
+    rating:"4.3",
+    foodItems:"Finger Food, Chinese",
+    price:"₹1100 for two",
+    distance:"8.3 km",
+    location:"Chinniayam palayam, Coimbatore"
+  },{
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636421/Zomato/download_l0g9g9.avif",
+    name:"Hush Bar - Radisson Blu",
+    rating:"4.3",
+    foodItems:"Finger Food, Bar Food, North Indian",
+    price:"₹1500 for two",
+    distance:"2.2 km",
+    location:"Radisson Blu, Peelamedu, Coimbatore"
+  },{
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636451/Zomato/download_zbqstj.avif",
+    name:"Spice It by IBIS",
+    rating:"4.3",
+    foodItems:"Continental, Healthy Food, North Indian, Fast Food, Finger Food, Desserts, Beverages",
+    price:"₹1000 for two",
+    distance:"1.7 km",
+    location:"Lakshmi Mills, Coimbatore"
+  },{
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636459/Zomato/download_pog5ao.avif",
+    name:"Latitude 11 - Le Meridien",
+    rating:"4.2",
+    foodItems:"Finger Food",
+    price:"₹2,200 for two",
+    distance:"12 km",
+    location:"Le Meridien, Neelambur, Coimbatore"
+  },{
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636487/Zomato/download_pcmpnr.avif",
+    name:"Tease - Vivanta Coimbatore",
+    rating:"4.4",
+    foodItems:"Finger Food, North Indian",
+    price:"₹4,000 for two",
+    distance:"1.8 km",
+    location:"Vivanta Coimbatore, Race Course, Coimbatore"
+  },{
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636495/Zomato/download_xcr8y9.avif",
+    name:"Shooters Bar And Rooftop Dine",
     rating:"4.0",
-    foodItems:"South Indian, Chinese",
-    price:"₹300 for one",
-    trending:"5425+ orders placed from here recently"
+    foodItems:"Mughlai, North Indian, BBQ, Bar Food, Beverages",
+    price:"₹1,900 for two",
+    distance:"8.6 km",
+    location:"Sitra, Coimbatore"
   },{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128249/Zomato/9ee324958cfd5d1f2c8637a0227885bc_o2_featured_v2_lyadfq.avif",
-    time:"23 min",
-    offer:"50% OFF up to 100",
-    name:"Hotel Maa",
-    rating:"3.9",
-    foodItems:"South Indian, Fast Food, Street Food, Beverages",
-    price:"₹100 for one",
-    trending:"8700+ orders placed from here recently"
-  },{
-    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1684128279/Zomato/edc92b9e7877ea851a3d6f1190d1580f_o2_featured_v2_tcavun.avif",
-    time:"31 min",
-    offer:"50% OFF up to 100",
-    name:"Pizza Hut",
-    rating:"3.8",
-    foodItems:"Pizza, Fast Food, Desserts, Beverages",
-    price:"₹100 for one",
-    trending:"2400+ orders placed from here recently"
-  }]
+    img:"https://res.cloudinary.com/dhtamjbrq/image/upload/v1688636504/Zomato/download_dykxve.avif",
+    name:"The Cotton Bar - ITC Hotels",
+    rating:"4.6",
+    foodItems:"Finger Food",
+    price:"₹1,500 for two",
+    distance:"2.4 km",
+    location:"Race Course, Coimbatore"
+  }
+]
 
 
     const filter=[{
@@ -152,6 +141,7 @@ function Dinning() {
             <div className='dinning-grid'>           
               {
                 bestFood.map((item,index)=>{
+                  console.log(item.location)
                   return <HeroContent key={index} img={item.img} 
                                   time={item.time} 
                                   offer={item.offer} 
@@ -159,7 +149,11 @@ function Dinning() {
                                   rating={item.rating} 
                                   foodItems={item.foodItems}
                                   trending={item.trending}
-                                  price={item.price} />
+                                  price={item.price}
+                                  distance={item.distance}
+                                  location={item.location}
+                                  trend={item.trend}
+                                  delivery={item.delivery} />
                 })
               }
               
