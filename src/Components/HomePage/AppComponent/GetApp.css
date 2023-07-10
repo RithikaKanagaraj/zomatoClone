@@ -8,12 +8,12 @@
 }
 .app-div{
     position: relative;
-    max-width: 90rem;
-    max-height: initial;
+    /* max-width: 90rem; */
+    /* max-height: initial; */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    
 }
 .mob-div{
     width: 20rem;
@@ -39,7 +39,7 @@
     position: relative;
     width: 25rem;
     height: 20rem;
-    flex-shrink: 0;
+    
 }
 .app-head{
     color: rgb(28, 28, 28);
@@ -81,4 +81,5 @@
     font-size: .8rem;
     /* margin: 0; */
     height: 10px;
+    float: left;
 }

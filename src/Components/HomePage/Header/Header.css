@@ -77,6 +77,8 @@
     color: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 0.6rem;
+    display: flex;
+    gap: 2rem;
 }
 
 .right-login-signup{
@@ -84,6 +86,10 @@
     display: flex;
     color: rgb(255, 255, 255);
     gap: 1.5rem;
+}
+
+ul{
+    list-style: none;
 }
 
 

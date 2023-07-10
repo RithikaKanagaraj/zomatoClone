@@ -41,24 +41,27 @@ function Header() {
                         <div className='get-app'>Get the App</div>
                     </div>
                     <div className='right-menu'>
-                    <div className='right-link'>Investor Relations</div>
-                    <div className='right-link'>Add restaurant</div>
-                    <div className='right-login-signup'>
-                    {loggedIn ? (
+                      <ul className='right-link'>
+                        <li>Investor Relations</li>
+                        <li>Add restaurant</li>
+                        {loggedIn ? (
                     <LoginProfile handleLogout={handleLogout} styleColor="#ffff" />
                     ) : (
                     <>
-                        <div className='login' onClick={handleChange}>
+                        <li className='login' onClick={handleChange}>
                         Log in
-                        </div>
+                        </li>
                         {open && <Login open={open} handleChange={handleChange} handleLogin={handleLogin} />}
-                        <div className='signup' onClick={handleChanges}>
+                        <li className='signup' onClick={handleChanges}>
                         Sign up
-                        </div>
+                        </li>
                         {available && <Signup available={available} handleChanges={handleChanges} handleLogin={handleLogin} />}
                     </>
                     )}
-                    </div>
+                      </ul>
+                    
+                   
+                  
                     </div>
                 </nav>
             </div>
