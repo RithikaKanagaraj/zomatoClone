@@ -37,7 +37,7 @@
 }
 .form-page{
     position: relative;
-    width: 27rem;
+    width: 25rem;
     height: 20rem;
     flex-shrink: 0;
 }
@@ -45,7 +45,7 @@
     color: rgb(28, 28, 28);
     margin: 0px 0px 1rem;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 .app-subtitle{
     font-size: inherit;

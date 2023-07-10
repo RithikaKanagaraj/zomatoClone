@@ -5,6 +5,7 @@ import LoginOption from './LoginOption'
 import CountryCode from './CountryCode/CountryCode';
 import { Formik, useFormik } from 'formik';
 import {basicSchema} from '../LogIn/Form-Schema/SchemaForm'
+import Input from './InputBox/Input'
 
 
 
