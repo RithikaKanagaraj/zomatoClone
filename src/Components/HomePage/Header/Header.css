@@ -36,7 +36,6 @@
     align-items: center;
     display: flex;
     justify-content: flex-end;
-    user-select: none;
     opacity: 1;
     padding: 1.7rem 0px;
     margin: 0px;
@@ -64,12 +63,10 @@
 }
 .right-menu{
     display: flex;
-    /* justify-content: space-evenly; */
-    gap: 3rem;
+    flex-direction: row;  
     width: 45%;
     white-space: nowrap;
     text-overflow: ellipsis;
-    /* overflow: hidden; */
 }
 .right-link{
     font-size: 1.1rem;
@@ -123,4 +120,33 @@ ul{
     font-weight: 600;
     font-size: 36px;
     line-height: 48px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .right-link{
+        flex-direction: column;
+        text-align: left;
+        background-color: white;
+        height: 210rem;
+        width: 100%; 
+        color: black;
+        z-index: 1;
+    }    .body-content{
+        z-index: 1;
+    }
+    .hamburger{
+        height: 40rem;
+    }
+    .right-menu{
+        width: 100%;
+    }
+   
+    .nav-head{
+        padding: 0;
+    }
+    .get-app{
+        display: none;
+    }
+    
 }

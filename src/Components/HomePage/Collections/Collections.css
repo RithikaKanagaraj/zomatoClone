@@ -79,6 +79,7 @@
     display: flex;
     align-items: center;
     margin: 0.3rem 0px .6qrem;
+    cursor: pointer;
 }
 .image-name{
     line-height: 1.5;
